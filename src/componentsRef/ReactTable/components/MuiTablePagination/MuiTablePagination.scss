@@ -1,0 +1,16 @@
+.mui-table-pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  // .MuiPagination-text button {
+  //   font-size: 0.75rem;
+  // }
+  .MuiPaginationItem-root {
+    font-size: 0.75rem;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.table-filter-item.active .MuiFormControl-root {
+  position: relative;
+}
+
+.table-filter-item.active .MuiFormControl-root::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=TableFilterItem.css.map */

@@ -1,0 +1,46 @@
+.table-pagination-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.table-pagination-wrapper .table-filter-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px;
+  margin-right: 20px;
+}
+
+.table-pagination-wrapper .table-filter-toggle.active {
+  background-color: #1c456a1a;
+}
+
+.table-pagination-wrapper .table-filter-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.table-pagination-wrapper .MuiPagination-text button {
+  font-size: 0.7rem;
+}
+
+.table-pagination-wrapper .MuiPaginationItem-root {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  margin: 0;
+}
+/*# sourceMappingURL=TablePagination.css.map */

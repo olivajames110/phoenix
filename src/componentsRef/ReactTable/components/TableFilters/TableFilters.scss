@@ -1,0 +1,100 @@
+.table-filter-outer-wrapper {
+  padding: 10px 10px 0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #235685;
+    padding: 5px;
+  }
+
+  button.clear-filters {
+    // font-weight: 600;
+    color: #235685;
+    padding: 0;
+    text-decoration: underline;
+    float: right;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .filter {
+    margin-bottom: 5px;
+    .filter-group-outer-wrapper {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      // padding: 10px 0;
+    }
+    .filter-group {
+      position: relative;
+      // padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 400px;
+      .filter-group__title {
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        .table-filter-toggle {
+          padding: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 5px;
+          svg {
+            display: block;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+      .filter-group-item-wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        .filter-group__item {
+          // flex-grow: 0;
+          // flex-shrink: 1;
+          flex-basis: 180px;
+          position: relative;
+          .MuiFilledInput-root {
+            border: none !important;
+          }
+        }
+      }
+      .divider {
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%);
+        width: 2px;
+        background-color: rgba(128, 128, 128, 0.137);
+        height: 20px;
+      }
+    }
+  }
+  section.table-section {
+    position: relative;
+    // overflow: auto;
+    // padding: 0 15px;
+    h2.table-title {
+      font-family: var(--mont);
+      padding: 10px 10px;
+      // padding: 24px 15px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #235685;
+    }
+    .global-search-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.document-manager-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // justify-content: space-between;
+  // padding: 0 8px 4px;
+  // position: absolute;
+  // top: -45px;
+  // right: 0;
+  // border-bottom: 1px solid rgb(215, 215, 215);
+  .document-manager-header__title {
+    font-size: 1rem !important;
+    font-weight: 500;
+    color: var(--black);
+  }
+  .document-manager-header__actions {
+    display: flex;
+    align-items: center;
+    .document-manager-header-action-item {
+      // padding: 0 5px;
+      label {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+      .MuiTypography-root,
+      button span {
+        opacity: 0.8 !important;
+        color: var(--black);
+        font-size: 0.75rem !important;
+      }
+    }
+  }
+}

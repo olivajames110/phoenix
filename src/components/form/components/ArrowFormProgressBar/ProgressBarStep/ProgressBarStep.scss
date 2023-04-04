@@ -1,0 +1,108 @@
+$borderRadius: 50px;
+
+.form-step {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--borderGray);
+  // border-radius: 2px;
+  padding: 8px 0;
+  &:not(:first-child) {
+    border-left: none !important;
+    padding-left: 10px;
+  }
+  &:first-child {
+    border-top-left-radius: $borderRadius;
+    border-bottom-left-radius: $borderRadius;
+  }
+  &:last-child {
+    border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    .form-step__arrow {
+      display: none;
+    }
+  }
+  .step-title {
+    font-size: 0.8571428571em;
+    // font-size: 12px;
+    color: #737373;
+    -webkit-font-smoothing: subpixel-antialiased;
+    // font-size: 0.75rem;
+  }
+  .form-step__arrow {
+    position: absolute;
+    left: 100%;
+    height: 110%;
+    z-index: 1111111;
+    .arrow {
+      position: absolute;
+      display: block;
+      height: 100%;
+      svg {
+        fill: #ffffff;
+        display: block;
+        height: 100%;
+      }
+      &#arrow-filled svg {
+        stroke: none;
+      }
+      &#arrow-border svg {
+        stroke: var(--borderGray);
+        // stroke: var(--blue);
+      }
+    }
+  }
+
+  &.previous {
+    display: flex;
+  }
+
+  &.previous.passed {
+    #arrow-border svg {
+      // fill: var(--lightBlue);
+      // stroke: var(--borderGray) !important;
+      stroke: var(--blue) !important;
+    }
+  }
+  &.active {
+    background-color: var(--lightBlue);
+    font-weight: bold;
+    border: 1px solid var(--blue);
+    span {
+      color: var(--blue);
+    }
+    .form-step__arrow {
+      // stroke: var(--lightBlue);
+      #arrow-filled svg {
+        fill: var(--lightBlue);
+        stroke: none;
+      }
+      #arrow-border svg {
+        fill: var(--lightBlue);
+        stroke: var(--blue) !important;
+      }
+    }
+  }
+  .checkmark-wrapper {
+    width: 16px;
+    height: 16px;
+    svg {
+      display: block;
+      width: 16px;
+      fill: #737373;
+      // fill: var(--blue);
+      height: 16px;
+    }
+  }
+
+  &.passed {
+    #arrow-border svg {
+      // fill: var(--lightBlue);
+      stroke: var(--borderGray) !important;
+      // stroke: var(--blue) !important;
+    }
+  }
+}

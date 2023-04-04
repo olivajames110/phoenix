@@ -1,0 +1,202 @@
+.editable-field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+  font-size: 0.7rem;
+}
+
+.editable-field .MuiSvgIcon-root {
+  margin-left: 0px;
+}
+
+.editable-field .MuiFilledInput-root {
+  padding-left: 0;
+}
+
+.editable-field .MuiFilledInput-root .MuiInputAdornment-root {
+  margin-top: 0 !important;
+  margin-right: -4px !important;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.editable-field .MuiFilledInput-root .MuiInputAdornment-root p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.editable-field .Mui-disabled {
+  background-color: #81818121;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.806) !important;
+}
+
+.editable-field.display-value .editable-field__value {
+  font-weight: bold;
+}
+
+.editable-field#editable-radio-field .MuiTypography-root {
+  font-size: 0.7rem !important;
+}
+
+.editable-field#editable-radio-field .MuiButtonBase-root-MuiRadio-root {
+  padding: 6px 8px !important;
+}
+
+.editable-field.unsaved .editable-field__value {
+  position: relative;
+}
+
+.editable-field.unsaved .editable-field__value .MuiFilledInput-root {
+  position: relative;
+  z-index: 111;
+  border: 2px solid var(--green);
+}
+
+.editable-field#date-picker.slim .editable-field__value {
+  width: 100px;
+}
+
+.editable-field#date-picker.slim .editable-field__value .MuiInputAdornment-root {
+  margin-left: -5px;
+}
+
+.editable-field#date-picker.slim .editable-field__value .MuiInputAdornment-root .MuiButtonBase-root {
+  padding: 0;
+}
+
+.editable-field#date-picker.slim .MuiFilledInput-root {
+  background-color: transparent !important;
+  border: none;
+  padding-right: 16px;
+}
+
+.editable-field#date-picker.slim .MuiFilledInput-root .MuiFilledInput-input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+}
+
+.editable-field.select .MuiFilledInput-input {
+  padding: 3px 4px !important;
+}
+
+.editable-field .MuiIconButton-root svg {
+  width: 1.1em !important;
+  height: 1.1em !important;
+}
+
+.editable-field input {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.editable-field span {
+  font-size: 0.7rem;
+}
+
+.editable-field .editable-field__label {
+  position: relative;
+  opacity: 0.95;
+  font-weight: normal;
+}
+
+.editable-field .editable-field__value {
+  font-weight: 500;
+  margin-left: 3px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editable-field .editable-field__value.calculation {
+  background-color: #2356851c;
+  font-size: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  height: 25px;
+}
+
+.editable-field .editable-field__value.calculation .MuiInputAdornment-root {
+  margin-left: 4px;
+}
+
+.editable-field .editable-field__value .MuiFilledInput-root {
+  border-width: 0px;
+  width: 100%;
+}
+
+.editable-field .editable-field__value .MuiFilledInput-root .MuiFilledInput-input {
+  font-size: 0.7rem;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.editable-field .editable-field__value .MuiInputLabel-root {
+  display: none;
+}
+
+.editable-field.vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.editable-field.vertical .editable-field__value {
+  margin-left: 0px;
+}
+
+.editable-field.fixed-value {
+  background-color: gray;
+}
+
+.editable-field.editing {
+  border: none;
+}
+
+.editable-field.editing input {
+  padding: 4px !important;
+}
+
+.editable-field.editing .MuiFilledInput-root {
+  border-width: 1px;
+}
+
+.editable-field.editing .MuiFilledInput-root .MuiFilledInput-input {
+  font-weight: 500;
+}
+
+.editable-field .MuiFilledInput-root::after {
+  border-radius: 0px !important;
+  bottom: -1px;
+}
+
+.editable-field .MuiFilledInput-root::before {
+  border-radius: 0px !important;
+  bottom: -1px;
+}
+
+.editable-field .MuiInputBase-root-MuiFilledInput-root::after {
+  border-radius: 0px !important;
+  bottom: -1px;
+}
+
+.editable-field .MuiInputBase-root-MuiFilledInput-root::before {
+  border-radius: 0px !important;
+  bottom: -1px;
+}
+/*# sourceMappingURL=EditableFieldWrapper.css.map */

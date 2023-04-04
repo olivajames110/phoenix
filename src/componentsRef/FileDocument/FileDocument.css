@@ -1,0 +1,76 @@
+.file-document-component {
+  position: relative;
+  font-size: inherit;
+}
+
+.file-document-component .downloadable-link {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+}
+
+.file-document-component .downloadable-link span {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.file-document-component .loader-wrapper {
+  width: 70px;
+  height: 100%;
+}
+
+.file-document-component .loader-wrapper .inner-wrapper {
+  padding: 30px 0;
+}
+
+#file-preview.modal {
+  width: auto;
+  padding: 0;
+  overflow: unset;
+}
+
+#file-preview.modal .modal__content {
+  max-width: unset;
+  margin: 0;
+}
+
+#file-preview.modal .modal__content .file-item-wrapper#pdf .react-pdf__Document {
+  width: 100%;
+}
+
+#file-preview.modal .modal__content .file-item-wrapper#pdf .react-pdf__Document .react-pdf__Page {
+  width: 100%;
+}
+
+#file-preview.modal .modal__content .file-item-wrapper#pdf .react-pdf__Document .react-pdf__Page canvas {
+  height: auto !important;
+  width: 100% !important;
+}
+
+#file-preview.modal .modal__content#image {
+  width: auto;
+  max-width: 280px;
+  height: 110px;
+}
+
+#file-preview.modal .modal__content#image img {
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  display: block;
+}
+
+#file-preview.modal .preview-footer {
+  position: relative;
+  border-top: 1px solid #eeeeee;
+  padding: 10px 0;
+}
+
+.file-preview-item {
+  font-size: 0.7rem;
+}
+/*# sourceMappingURL=FileDocument.css.map */

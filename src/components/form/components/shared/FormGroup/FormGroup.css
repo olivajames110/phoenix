@@ -1,0 +1,39 @@
+.form-group {
+  position: relative;
+  padding: 5px 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form-group .radio-field-options {
+  padding-left: 10px;
+}
+
+.form-group.no-margin {
+  margin-top: 0;
+}
+
+.form-group .form-field {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-group.bottom-border {
+  border-bottom: 1px dashed #8080808c;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.form-group.error #autofill-field {
+  border: 1px solid var(--red) !important;
+  border-radius: 6px;
+}
+
+.form-group .form-group-title {
+  font-size: 0.8rem;
+  color: #235685;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.02rem;
+  text-align: left;
+}
+/*# sourceMappingURL=FormGroup.css.map */

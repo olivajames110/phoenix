@@ -1,0 +1,41 @@
+#radio-field {
+  position: relative;
+  text-align: left;
+  // margin-top: 40px;
+  .radio-field-options {
+    // padding-bottom: 10px;
+    // padding: 10px 0;
+    // margin-top: -5px;
+    &.vertical {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .MuiFormControlLabel-root {
+    margin-right: 20px;
+    margin-left: -8px;
+    // margin-left: 0px;
+  }
+  .MuiRadio-root {
+    // padding: 0 !important;
+    // margin-left: -5px;
+    // color: #666666 !important;
+  }
+  .MuiTypography-root {
+    font-size: 0.75rem !important;
+    // font-size: 0.8rem !important;
+    // margin-left: 5px;
+    margin-left: -5px;
+    color: #666666;
+  }
+  svg {
+    // color: #666666;
+  }
+}
+
+.MuiRadio-root.Mui-checked {
+  color: #235685 !important;
+}
+.MuiTouchRipple-root {
+  // color: #666666 !important;
+}

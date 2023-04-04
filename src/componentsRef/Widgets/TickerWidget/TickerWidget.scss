@@ -1,0 +1,102 @@
+.dashboard-widget.ticker {
+  width: 100%;
+
+  .border-card {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    .title {
+      margin-top: 5px;
+      font-weight: 600;
+      // font-size: NaNrem;
+      line-height: 1.334;
+      line-height: 1.6rem;
+      // line-height: 1.5;
+      // color: rgba(0, 0, 0, 0.6);
+    }
+    .sub-title {
+      line-height: 1.5;
+      font-size: 0.75rem;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  .icon-wrapper {
+    background-color: #1c456a14;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    // height: 100%;
+    .MuiSvgIcon-fontSizeMedium {
+      font-size: 2.4rem;
+    }
+    .MuiBadge-badge {
+      background-color: var(--green);
+    }
+    svg {
+      // height: 54%;
+      // width: 54%;
+      color: #36455261;
+      // color: #1c456adb;
+    }
+  }
+
+  #action-button {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    svg {
+      color: var(--black);
+      opacity: 0.55;
+    }
+  }
+
+  &.warning {
+    .icon-wrapper {
+      background-color: #9b9d181e;
+      svg {
+        // height: 54%;
+        // width: 54%;
+        color: #bcbe3e;
+      }
+    }
+    .ticker-widget-status__value {
+      color: #9b9d18;
+      // font-weight: bold;
+      // margin-left: 5px;
+    }
+  }
+  &.completed {
+    .icon-wrapper {
+      background-color: #0c630f1a;
+      svg {
+        // height: 54%;
+        // width: 54%;
+        color: #0c630f;
+      }
+    }
+    .ticker-widget-status__value {
+      color: #0c630f;
+    }
+  }
+}
+
+.ticker-widget-status {
+  position: relative;
+  line-height: 1.5;
+
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  div {
+    font-size: 0.75rem;
+  }
+  .ticker-widget-status__value {
+    color: inherit;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+}

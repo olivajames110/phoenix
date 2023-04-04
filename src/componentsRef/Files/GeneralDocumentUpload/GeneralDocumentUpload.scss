@@ -1,0 +1,147 @@
+#general-upload {
+  position: relative;
+  // margin-bottom: 20px;
+
+  .refresh-button {
+    position: absolute;
+    right: 5px;
+    top: -30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    transition: 80ms ease;
+    &.spin {
+      animation: spin 1s linear infinite;
+    }
+    &:hover {
+      transform: rotate(22deg);
+    }
+    svg {
+      height: 18px;
+      width: 18px;
+      color: var(--black);
+    }
+  }
+
+  .file-thumbail-container {
+    // margin-top: 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    th:nth-child(4) {
+      width: 45px;
+    }
+    .input-table-outer-wrapper {
+      border: 2px solid #d4d4d4;
+      border-top: 0;
+    }
+
+    div,
+    td,
+    span,
+    input {
+      font-size: 0.7rem !important;
+    }
+
+    .input-table {
+      th {
+        padding: 4px 6px;
+      }
+      th {
+        font-weight: 600;
+      }
+
+      td,
+      th {
+        &:last-child {
+          width: 30px;
+        }
+      }
+      tr td:first-child {
+        // padding: 4px 6px;
+      }
+    }
+
+    .editable-field__value {
+      margin-left: 0;
+      .MuiFilledInput-root {
+        border: none;
+        border-radius: 0px;
+      }
+    }
+
+    button#delete {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .document-upload-card {
+    min-height: unset !important;
+  }
+  .general-documents-inner-wrapper {
+    display: flex;
+    align-items: center;
+    // gap: 40px;
+    flex-direction: column;
+
+    #file-upload {
+      width: 100%;
+      // flex-basis: 600px;
+      flex-grow: 1;
+    }
+
+    .form-field#general-select {
+      max-width: 320px;
+      margin-top: 0 !important;
+    }
+  }
+
+  .upload-button-wrapper {
+    display: flex;
+    // flex-shrink: 0;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    // flex-basis: 300px;
+    button#upload-files-button {
+      // width: 120px;
+      // padding: 15px;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      span {
+        margin-right: 6px;
+      }
+      .icon-wrapper {
+        height: 16px;
+        width: 16px;
+        margin: 0;
+      }
+    }
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .article.document-upload-group-item {
+    margin: 0 !important;
+  }
+}

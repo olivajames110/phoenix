@@ -1,0 +1,75 @@
+.mui-dialog {
+  h2.mui-dialog-title {
+    padding: 24px 24px 22px;
+    // padding: 10px 24px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: var(--mont);
+    font-weight: 600;
+    opacity: 0.85;
+    color: rgb(23, 43, 77);
+    // color: var(--gray);
+  }
+
+  .active {
+    // background-color: var(--blue);
+    // color: #ffffff;
+  }
+  .dialog-body {
+    .status-graphic {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      // flex-direction: column;
+      // justify-content: space-evenly;
+      margin-bottom: 20px;
+      .status-graphic__item {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 0.9rem;
+        }
+        .label {
+          // font-size: 0.8rem;
+          // opacity: 0.9;
+          font-weight: 500;
+        }
+        .value {
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          margin-left: 8px;
+          color: var(--blueButton);
+        }
+      }
+      .status-graphic__arrow {
+        display: flex;
+        align-items: center;
+        margin: 0 12px;
+        height: 14px;
+        opacity: 0.85;
+        svg {
+          opacity: 0.8;
+          width: 28px;
+          height: 28px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .dialog-footer {
+    button {
+      font-weight: 600;
+    }
+  }
+}
+
+.MuiDialog-root {
+  .MuiBackdrop-root {
+    backdrop-filter: blur(3px);
+    background: rgba(9, 30, 66, 0.54);
+  }
+}

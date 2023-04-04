@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACtB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,aAAa;EAGtB,UAAU,EAAE,SAAS;CAwCtB;;AA7CD,AAQE,uBARqB,CAQrB,kBAAkB,CAAC;EACjB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,GAAG;CAMlB;;AAhBH,AAaI,uBAbmB,CAQrB,kBAAkB,CAKhB,uBAAuB,CAAC;EACtB,WAAW,EAAE,GAAG,CAAC,KAAK,CAAC,WAAW;CACnC",
+    "sources": [
+        "TextEditorMessageThread.scss"
+    ],
+    "names": [],
+    "file": "TextEditorMessageThread.css"
+}

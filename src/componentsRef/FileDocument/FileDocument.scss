@@ -1,0 +1,121 @@
+.file-document-component {
+  position: relative;
+  // min-height: 100px;
+  // min-height: 35px;
+  font-size: inherit;
+  .downloadable-link {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+    span {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+    }
+  }
+  .loader-wrapper {
+    width: 70px;
+    height: 100%;
+    .inner-wrapper {
+      padding: 30px 0;
+    }
+  }
+}
+
+#file-preview.modal {
+  // position: relative;
+  width: auto;
+  padding: 0;
+  overflow: unset;
+  .modal__content {
+    max-width: unset;
+    margin: 0;
+    .file-item-wrapper {
+      //Pdf
+      &#pdf {
+        .react-pdf__Document {
+          width: 100%;
+          // max-width: 300px;
+          .react-pdf__Page {
+            width: 100%;
+            canvas {
+              height: auto !important;
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+
+    //Image
+    &#image {
+      width: auto;
+      max-width: 280px;
+      height: 110px;
+      img {
+        width: auto;
+        object-fit: cover;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .preview-footer {
+    position: relative;
+    border-top: 1px solid #eeeeee;
+    padding: 10px 0;
+  }
+
+  // .pager {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   .pager__pages {
+  //     position: relative;
+  //     .current-page {
+  //       background-color: #e3e3e3;
+  //       padding: 3px 6px;
+  //       margin: 0 2px;
+  //       border-radius: 4px;
+  //     }
+  //   }
+  //   button.pager-button {
+  //     width: 30px;
+  //     height: 30px;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     padding: 0;
+  //     svg {
+  //       width: 18px;
+  //       height: 18px;
+  //       fill: gray;
+  //     }
+  //   }
+  // }
+
+  // button.download-button {
+  //   position: absolute;
+  //   right: 15px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 30px;
+  //   height: 30px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 0;
+  //   svg {
+  //     height: 24px;
+  //     width: 24px;
+  //     fill: var(--blue);
+  //   }
+  // }
+}
+
+.file-preview-item {
+  font-size: 0.7rem;
+}

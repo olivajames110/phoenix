@@ -1,0 +1,153 @@
+//Actual card item
+article.comment-message {
+  position: relative;
+  font-size: 0.7rem;
+  // padding: 12px 12px;
+  // margin: 8px 0;
+  background-color: #ffffff;
+  // border-radius: 4px;
+  border-bottom: 1px solid #e6e6e6b3;
+  // box-shadow: 0 1px 2px 0px #3f3f3f17;
+  z-index: 1111111111111;
+  // border-radius: 4px;
+  .text-editor__toolbar {
+    padding: 5px;
+    button.submit-button {
+      font-size: 0.7rem;
+      background-color: var(--blue);
+      color: #ffffff;
+      padding: 2px 6px;
+      // border-radius: 50px;
+    }
+  }
+
+  //Card Header
+  header.message__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding: 8px 8px 0;
+    // padding: 8px 12px 10px;
+    // padding-bottom: 4px;
+    button {
+      padding: 0;
+    }
+    .divider {
+      width: 1px;
+      background: rgb(175, 175, 175);
+      height: 10px;
+      margin: 0 6px;
+    }
+    .message-header__user {
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    .message-action-button {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 3px;
+      }
+      &#edit {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .message-header__date,
+  .message-action-button {
+    font-size: 0.7rem;
+
+    opacity: 0.9;
+
+    span {
+      font-weight: 500;
+      font-size: 0.7rem;
+    }
+  }
+  .DraftEditor-root {
+    padding: 8px;
+    padding-top: 2px;
+  }
+  //Card Body
+  .message__body {
+    // padding: 0 12px;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  &.is-stip {
+    // border-left: 5px solid #eed202;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -3px;
+      bottom: 0;
+      height: 100%;
+      width: 5px;
+      background-color: #eed202;
+
+      // border: 3px solid #0f0f0f52;
+      z-index: 1111;
+    }
+  }
+  &.is-reply {
+    // border-left: 5px solid #eed202;
+    // margin-left: 20px;
+    .DraftEditor-editorContainer {
+      // min-height: 40px;
+      div,
+      span {
+        height: 100%;
+      }
+    }
+    .message__header {
+      padding-bottom: 0;
+    }
+    .reply-line {
+      z-index: -1111;
+      position: absolute;
+      left: -10px;
+      top: -8px;
+      height: 50%;
+      width: 10px;
+      overflow: hidden;
+      display: block;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border: 3px solid #9c9ea0;
+        // border: 3px solid #0f0f0f52;
+        z-index: 1111;
+        border-radius: 6px;
+        border-right: none;
+        border-top: none;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        z-index: -1;
+      }
+    }
+    .message__body {
+      position: relative;
+      // z-index: 1111;
+    }
+  }
+
+  &.is-editing {
+    .message__body {
+      padding: 0;
+      // padding-top: 10px;
+    }
+    .DraftEditor-root {
+      padding-bottom: 0px;
+      min-height: 50px;
+    }
+  }
+}

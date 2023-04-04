@@ -1,0 +1,117 @@
+#address-autofill {
+  position: relative;
+  z-index: 111111111111;
+  // margin-top: 40px;
+  .autofill-input-wrapper {
+    &.required-error {
+      .css-1wa3eu0-placeholder {
+        color: var(--red);
+      }
+    }
+  }
+
+  //Autofill input height
+  .css-2b097c-container > div {
+    min-height: 45px !important;
+    // min-height: 54px !important;
+  }
+
+  //Autofill dropdown z-index
+  .css-2613qy-menu {
+    position: relative;
+    display: block;
+    z-index: 111111111111 !important;
+  }
+  .autofill-input-wrapper {
+    padding-top: 5px;
+  }
+  .button-container {
+    position: relative;
+    font-weight: 500;
+    transition: 100ms;
+    button {
+      display: flex;
+      font-size: 0.75rem;
+      font-weight: inherit;
+      border-radius: 0;
+      // background: rgb(255, 255, 255);
+      // padding: 5px0;
+      padding: 0;
+      color: var(--blue);
+      // border-bottom: 1px solid;
+      svg {
+        fill: var(--blue);
+      }
+    }
+
+    &#clear {
+      // background: rgb(255, 255, 255);
+      text-decoration: underline;
+      margin-top: 10px;
+      // width: 150px;
+    }
+    &#custom-address {
+      position: absolute;
+      right: 0;
+      top: 6px;
+      button {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  //I cant find my address && Edit button containers
+  .MuiPaper-root {
+    margin-top: 0px !important;
+  }
+  #all-fields-accordian {
+    position: relative;
+    box-shadow: none;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: hsl(0, 0%, 80%);
+    overflow: hidden;
+    .MuiCollapse-wrapper {
+      // border-top: 1px solid rgba(128, 128, 128, 0.475);
+      border-top: 2px solid #1c456a40;
+    }
+    .MuiAccordionSummary-root {
+      min-height: 44px;
+
+      background-color: #ffffff;
+    }
+    .MuiAccordionSummary-content {
+      margin: 10px 0;
+    }
+    .MuiFormHelperText-root {
+      color: var(--red);
+      font-size: 0.7rem;
+      margin-top: 0;
+      margin-left: 0;
+      line-height: 0.8rem;
+      font-style: italic;
+    }
+    .MuiAccordionDetails-root {
+      // padding: 8px 16px 16px;
+      background: #23568503;
+    }
+  }
+}
+
+.all-fields-container {
+  position: relative;
+  // margin-top: 5px;
+  // border: 1px solid rgba(128, 128, 128, 0.475);
+  background: #80808012;
+  padding: 15px 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  input {
+    background-color: #ffffff;
+  }
+  // padding-top: 10px;
+}
+
+.pac-container {
+  z-index: 1111111111111111111111;
+}

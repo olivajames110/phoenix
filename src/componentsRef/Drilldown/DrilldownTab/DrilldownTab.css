@@ -1,0 +1,10 @@
+.drilldown-tab {
+  position: relative;
+  padding: 0 16px 16px;
+  height: 100%;
+}
+
+.drilldown-tab .drilldown-tab__body {
+  height: 100%;
+}
+/*# sourceMappingURL=DrilldownTab.css.map */

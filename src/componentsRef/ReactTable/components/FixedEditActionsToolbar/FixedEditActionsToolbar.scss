@@ -1,0 +1,39 @@
+.fixed-edit-actions-toolbar {
+  .actions-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .toolbar-select {
+      margin-right: 10px;
+      width: 140px;
+    }
+  }
+  .button-wrapper {
+    button {
+      display: flex;
+      color: var(--blue);
+      align-items: center;
+      &.btn-blue {
+        justify-content: center;
+        color: #ffffff;
+      }
+      svg {
+        height: 20px;
+        width: 20px;
+        margin-right: 4px;
+      }
+    }
+    &#close {
+      // position: absolute;
+      // top: 0px;
+      // right: 0px;
+      button {
+        // padding: 2px;
+        svg {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.flatiron-table-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flatiron-table-title #filter {
+  padding: 5px;
+}
+
+.flatiron-table-title #filter svg {
+  color: var(--blue);
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.flatiron-table-title h2 {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+/*# sourceMappingURL=FlatironTableTitle.css.map */

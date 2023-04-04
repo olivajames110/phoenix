@@ -1,0 +1,93 @@
+.form-wizard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-wizard-wrapper .mui-stepper-container {
+  position: relative;
+  border-radius: 0px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+#form-wizard {
+  position: relative;
+  width: 100%;
+}
+
+#form-wizard .wizard-content-area {
+  position: relative;
+  margin: 0 auto;
+}
+
+#form-wizard .wizard-content-area.read-only::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 0px);
+  height: calc(100% + 0px);
+  background-color: #ffffff00;
+  z-index: 111111111;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#form-wizard .wizard-content-area.read-only::after {
+  content: "Read Only";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #ff000014;
+  color: #ff0000;
+  font-style: italic;
+  font-weight: 400;
+  z-index: 1111111111;
+}
+
+#form-wizard .wizard__pages > .form-field:first-of-type {
+  margin-top: 0;
+}
+
+#form-wizard .wizard__buttons {
+  margin-top: 50px;
+}
+
+#form-wizard .wizard__buttons button.btn-gray--ghost {
+  border: none;
+}
+
+#form-wizard .wizard__buttons button span {
+  color: inherit;
+}
+
+#form-wizard .wizard__buttons button .icon-wrapper {
+  display: block;
+}
+
+#form-wizard .wizard__buttons button .icon-wrapper svg {
+  display: block;
+  height: 22px;
+}
+
+#form-wizard .wizard__buttons button#back .icon-wrapper svg {
+  fill: #7f7f7f;
+}
+/*# sourceMappingURL=FormWizard.css.map */

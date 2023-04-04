@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,AAAA,eAAe,CAAC;EAG/B,UAAU,EAAE,SAAS;EAGrB,WAAW,EAAE,eAAe;CAa7B;;AAnBD,AAOE,iBAPe,AAAA,eAAe,CAO9B,GAAG,CAAC;EACF,KAAK,EAAE,OAAS;CACjB;;AATH,AAUE,iBAVe,AAAA,eAAe,AAU7B,QAAQ,CAAC;EACR,WAAW,EAAE,iBAAiB;CAC/B;;AAZH,AAaE,iBAbe,AAAA,eAAe,AAa7B,MAAM,CAAC;EACN,WAAW,EAAE,iBAAiB;CAC/B;;AAfH,AAgBE,iBAhBe,AAAA,eAAe,AAgB7B,KAAK,CAAC;EACL,WAAW,EAAE,iBAAiB;CAC/B",
+    "sources": [
+        "SnackbarAlert.scss"
+    ],
+    "names": [],
+    "file": "SnackbarAlert.css"
+}

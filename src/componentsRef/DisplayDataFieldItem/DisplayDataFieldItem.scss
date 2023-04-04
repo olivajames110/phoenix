@@ -1,0 +1,76 @@
+.display-data-field-item {
+  // margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem !important;
+  &.large {
+    font-size: 0.8rem !important;
+    span {
+      line-height: 1.2rem;
+    }
+    .display-data-field-item__value {
+      padding-left: 2px;
+    }
+  }
+  &.row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    // justify-content: space-between;
+    .display-data-field-item__value {
+      margin-top: 0;
+      margin-left: 4px;
+    }
+  }
+
+  &#primary-item {
+    flex-direction: row;
+    // margin-left: 31px;
+    padding: 0px 10px 0 6px;
+
+    font-size: 0.9rem !important;
+    span {
+      font-family: var(--mont) !important;
+      margin-top: 0px;
+      &.display-data-field-item__label {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  span {
+    font-size: 0.7rem;
+    // opacity: 0.8;
+    font-family: inherit;
+    font-size: inherit;
+    color: #242526;
+
+    &.display-data-field-item__label {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    &.display-data-field-item__value {
+      // margin-top: -4px;
+      font-weight: 700;
+    }
+  }
+
+  .MuiChip-root {
+    height: 22px;
+    .MuiChip-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      // opacity: 0.8;
+      line-height: 0.8rem;
+      padding-left: 6px;
+    }
+    .MuiChip-deleteIconSmall {
+      margin-right: 1px;
+    }
+  }
+  #add.MuiIconButton-root {
+    padding: 5px;
+    margin-left: 5px;
+  }
+}

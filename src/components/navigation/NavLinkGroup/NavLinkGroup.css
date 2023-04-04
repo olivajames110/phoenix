@@ -1,0 +1,19 @@
+.nav-link-group {
+  padding: 10px 0;
+  color: #ffffffbe;
+}
+
+.nav-link-group h3.nav-link-group-title {
+  padding: 0 10px;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.nav-link-group .MuiListItemIcon-root {
+  min-width: 22px;
+}
+
+.nav-link-group svg {
+  fill: #ffffffbe;
+}
+/*# sourceMappingURL=NavLinkGroup.css.map */

@@ -1,0 +1,76 @@
+.input-save-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #1c466a4f;
+  margin-left: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50px;
+  z-index: 111111;
+  margin-top: -10px;
+}
+
+.input-save-icon.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 0;
+}
+
+.input-save-icon.row button {
+  padding: 2px 4px !important;
+}
+
+.input-save-icon.row button#save {
+  padding-right: 0 !important;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.input-save-icon.row button#reset {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 0px;
+}
+
+.input-save-icon button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1c456a26;
+  border-radius: 0;
+}
+
+.input-save-icon button:hover {
+  background: #ccdbe826;
+}
+
+.input-save-icon button#save {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.input-save-icon button#reset {
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.input-save-icon button svg {
+  display: block;
+  color: var(--blue);
+  height: 14px;
+  width: 14px;
+}
+/*# sourceMappingURL=InputSave.css.map */

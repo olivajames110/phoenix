@@ -1,0 +1,47 @@
+.text-editor__toolbar {
+  // background-color: #f6f7f8;
+  // border-top: 1px solid #878a8c34;
+  // border-bottom: 1px solid #878a8c34;
+  // padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  .toolbar__format-actions {
+    display: flex;
+    gap: 1px;
+    // width: 100%;
+    // justify-content: space-around;
+    // &#colors {
+    //   border-left: 1px solid #878a8c34;
+    // }
+    button.text-editor-toolbar-button {
+      display: flex;
+      flex-grow: 0;
+      height: 34px;
+      width: 34px;
+      padding: 0;
+      &.active {
+        background-color: #2356851c;
+        // background-color: rgba(128, 128, 128, 0.101);
+      }
+      &#highlight {
+        svg {
+          color: #adad00;
+        }
+      }
+      &#color {
+        svg {
+          color: #ab2828;
+        }
+      }
+    }
+  }
+  .additional-actions {
+    .text-editor-toolbar-button {
+      padding: 6px 10px;
+      margin-left: 15px;
+    }
+  }
+}

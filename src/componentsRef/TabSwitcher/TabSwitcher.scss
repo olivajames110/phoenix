@@ -1,0 +1,88 @@
+.tab-switcher {
+  position: relative;
+
+  .MuiBadge-badge {
+    // top: 12px;
+    // right: 6px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 2px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+  }
+  .MuiTabs-scroller {
+    overflow-x: auto !important;
+  }
+  &.sub {
+    .Mui-selected {
+      // color: var(--blueButton) !important;
+      font-weight: 400;
+      // background-image: linear-gradient(to top, #f0f8ff, #ffffff00);
+      // min-width: none;
+    }
+    .MuiTabs-indicator {
+      height: 2px;
+    }
+    .MuiButtonBase-root {
+      text-transform: capitalize;
+      padding: 4px 8px;
+      min-height: 30px !important;
+      font-size: 0.7rem !important;
+      font-weight: 500 !important;
+      // &:not(:last-child) {
+      //   border-right: 1px solid #80808030;
+      // }
+    }
+
+    .MuiTabs-root {
+      min-height: 24px;
+    }
+    .MuiTab-root {
+      font-weight: 500 !important;
+    }
+    .MuiTab-root.Mui-selected {
+      // font-weight: 600 !important;
+    }
+  }
+  .MuiTabs-root {
+    min-height: 42px;
+  }
+
+  #add-new {
+    // padding: 0;
+    // width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      display: block;
+      height: 22px;
+      width: 22px;
+      color: var(--blue);
+    }
+  }
+  .MuiButtonBase-root {
+    text-transform: capitalize;
+    padding: 4px 10px;
+    opacity: 1;
+    // padding: 4px 16px;
+    // padding: 4px 8px;
+    min-height: 42px;
+    font-size: 0.75rem;
+    color: #000000c9;
+  }
+  .MuiTabs-indicator {
+    background-color: #235685b0 !important;
+    height: 3px;
+    border-radius: 40px;
+  }
+  .MuiTab-root {
+    min-width: 0px;
+    &.Mui-selected {
+      color: var(--blueButton) !important;
+      font-weight: 600;
+      background-image: linear-gradient(to top, #f0f8ff, #ffffff00);
+      min-width: none;
+    }
+  }
+}

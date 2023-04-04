@@ -1,0 +1,18 @@
+section.drilldown-section {
+  position: relative;
+  // padding-bottom: 40px;
+  // margin-bottom: 30px;
+  &:not(:last-child) {
+    // border-bottom: 3px solid #f6f7fa;
+    .bottom-divider {
+      padding-bottom: 40px;
+      margin-bottom: 30px;
+      border-bottom: 7px solid #23568533;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+
+    // border-bottom: 3px solid rgba(128, 128, 128, 0.216);
+    // background-color: red;
+  }
+}

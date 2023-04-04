@@ -1,0 +1,43 @@
+.fixed-edit-actions-toolbar .actions-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.fixed-edit-actions-toolbar .actions-container .toolbar-select {
+  margin-right: 10px;
+  width: 140px;
+}
+
+.fixed-edit-actions-toolbar .button-wrapper button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--blue);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixed-edit-actions-toolbar .button-wrapper button.btn-blue {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+.fixed-edit-actions-toolbar .button-wrapper button svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.fixed-edit-actions-toolbar .button-wrapper#close button svg {
+  height: 20px;
+  width: 20px;
+}
+/*# sourceMappingURL=FixedEditActionsToolbar.css.map */

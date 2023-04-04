@@ -1,0 +1,62 @@
+#form-stepper.MuiStepper-root {
+  position: relative;
+  // background-color: #f2f5f875;
+  // border: 1px solid #1c456a1a;
+
+  // border-radius: 8px;
+  padding: 16px 0;
+
+  margin-bottom: 10px;
+  // background: #c5c5c514;
+  // margin-left: -20px;
+  // margin-right: -20px;
+  .MuiStepIcon-text {
+    font-size: 12px;
+  }
+  .MuiStepLabel-label.Mui-active {
+    color: #1c456a;
+    font-weight: 600;
+  }
+  .MuiStepLabel-label.Mui-completed {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  // margin-left: -20px;
+  .MuiStepLabel-iconContainer.MuiStepLabel-alternativeLabel {
+    // margin-top: 2px;
+    // svg {
+    //   width: 2.2rem;
+    //   height: 2.2rem;
+    // }
+  }
+  svg.MuiSvgIcon-root {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    font-size: 0.7rem;
+    margin-top: 6px;
+  }
+
+  &.extended {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &.normal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .stepper-inner-wrapper {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+  &.alternate {
+    .MuiStepLabel-iconContainer.MuiStepLabel-alternativeLabel {
+      margin-top: 0px;
+    }
+    svg.MuiSvgIcon-root {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}

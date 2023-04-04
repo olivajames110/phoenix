@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EACpB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,eAAe;EAC3B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CAMpB;;AAXD,AAME,qBANmB,AAMlB,MAAM,CAAC;EACN,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,UAAU;CACxB",
+    "sources": [
+        "PseudoInput.scss"
+    ],
+    "names": [],
+    "file": "PseudoInput.css"
+}

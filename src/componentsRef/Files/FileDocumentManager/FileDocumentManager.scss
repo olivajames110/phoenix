@@ -1,0 +1,41 @@
+section.document-manager-tables {
+  position: relative;
+  // padding-top: 20px;
+  #general-upload {
+    // padding-bottom: 10px;
+  }
+  &.all {
+    .doc-group-table-card-outer-wrapper {
+      padding-bottom: 0;
+      padding-top: 0;
+      // margin-bottom: 20px;
+      border-bottom: none;
+    }
+    #general-upload {
+      padding-bottom: 10px;
+      .upload-button-wrapper {
+        padding-bottom: 25px;
+        border-bottom: 2px solid #8080803d;
+      }
+    }
+    article#all-files-table {
+      border: 2px solid #bebdbd57;
+
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+  &.categorized {
+    // display: flex;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    // grid-template-columns: 240px 1fr;
+    height: 100%;
+    .doc-group-tables-container {
+      flex-grow: 1;
+      // padding-right: 20px;
+      // padding-top: 20px;
+      // overflow-y: auto;
+    }
+  }
+}

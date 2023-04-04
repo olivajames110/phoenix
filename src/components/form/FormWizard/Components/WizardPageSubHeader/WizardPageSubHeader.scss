@@ -1,0 +1,21 @@
+.wizard-page-sub-header {
+  // font-size: 1rem;
+  // line-height: 1.8rem;
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  /* text-transform: uppercase; */
+  /* margin-bottom: -5px; */
+  // color: #545454;
+  // color: var(--black);
+  color: #215282;
+  // color: var(--blueButton);
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+
+  // font-weight: 400;
+  font-weight: 600;
+  font-family: var(--mont) !important;
+  // border-bottom: 1px solid #cecece;
+  // padding-bottom: 5px;
+  // margin-bottom: 10px;
+}

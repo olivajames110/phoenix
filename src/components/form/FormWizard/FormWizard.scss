@@ -1,0 +1,96 @@
+.form-wizard-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mui-stepper-container {
+    position: relative;
+    border-radius: 0px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    // border-top-left-radius: 0;
+    // border-top-right-radius: 0;
+    // border-bottom-left-radius: 8px;
+    // border-bottom-right-radius: 8px;
+    // border-top: 0;
+    // box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.149);
+  }
+}
+
+#form-wizard {
+  position: relative;
+
+  // max-width: 620px;
+  width: 100%;
+  // margin: 20px auto;
+
+  .wizard-content-area {
+    position: relative;
+    // padding: 10px 0;
+    // max-width: 680px;
+    // max-width: 620px;
+    margin: 0 auto;
+    // padding-top: 15px;
+    &.read-only {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 0px);
+        height: calc(100% + 0px);
+        background-color: #ffffff00;
+        z-index: 111111111;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      &::after {
+        content: "Read Only";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 13px;
+        background: #ff000014;
+        color: #ff0000;
+        font-style: italic;
+        font-weight: 400;
+        z-index: 1111111111;
+      }
+    }
+  }
+  .wizard__pages {
+    > .form-field:first-of-type {
+      // background-color: green;
+      margin-top: 0;
+    }
+  }
+  .wizard__buttons {
+    margin-top: 50px;
+    // margin-bottom: 25px;
+
+    button {
+      &.btn-gray--ghost {
+        border: none;
+      }
+      span {
+        color: inherit;
+      }
+      .icon-wrapper {
+        display: block;
+        svg {
+          display: block;
+          // fill: #ffffff;
+          height: 22px;
+        }
+      }
+
+      &#back .icon-wrapper svg {
+        fill: #7f7f7f;
+      }
+    }
+  }
+}

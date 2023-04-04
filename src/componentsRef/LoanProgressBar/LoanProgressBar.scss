@@ -1,0 +1,29 @@
+#loan-progress-bar.MuiStepper-root {
+  .MuiStepConnector-line {
+    border-top-width: 2px;
+  }
+  .MuiSvgIcon-root {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .Mui-completed {
+    color: #4da177;
+
+    .MuiStepConnector-line {
+      border-color: #4da177;
+    }
+  }
+  .Mui-active {
+    color: #4da177;
+    font-weight: 600;
+    .MuiStepConnector-line {
+      border-color: #4da177;
+    }
+  }
+
+  .MuiStepLabel-alternativeLabel .MuiStepLabel-label {
+    margin-top: 5px;
+    font-size: 0.7rem;
+    // white-space: nowrap;
+  }
+}

@@ -1,0 +1,39 @@
+.popover-button {
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
+  color: #1a1818;
+  fill: #929292;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  // padding: 6px 8px;
+  border-radius: 4px;
+  padding: 9px;
+  &.disabled {
+    opacity: 0.65;
+    cursor: default;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  .popover-button__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: inherit;
+    color: inherit;
+    margin-right: 6px;
+    svg {
+      fill: inherit;
+      color: inherit;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  .popover-button__text {
+    color: inherit;
+  }
+}

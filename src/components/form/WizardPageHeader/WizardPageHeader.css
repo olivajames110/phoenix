@@ -1,0 +1,13 @@
+.wizard-page-header {
+  font-size: 0.9rem;
+  line-height: 2.1rem;
+  /* text-transform: uppercase; */
+  /* margin-bottom: -5px; */
+  color: var(--blue);
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--inter) !important;
+}
+/*# sourceMappingURL=WizardPageHeader.css.map */

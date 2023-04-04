@@ -1,0 +1,19 @@
+header.flatiron-table-header {
+  padding: 6px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafb;
+  &.blue {
+    background-color: #2356852e;
+  }
+  .header-title {
+    color: var(--blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .header-content {
+    position: relative;
+  }
+}

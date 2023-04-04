@@ -1,0 +1,19 @@
+.dashboard-widget {
+  width: 100%;
+  .border-card {
+    background-color: #ffffff;
+    padding: 15px;
+    // border-radius: 10px;
+  }
+  .icon-wrapper {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 100%;
+    svg {
+      color: #ffffff;
+    }
+  }
+}

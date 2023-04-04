@@ -1,0 +1,7 @@
+.MuiPopover-paper.custom-popover {
+  padding: 8px;
+  min-width: 210px !important;
+  -webkit-box-shadow: 0 0 3px 2px #0000001a, 0 2px 3px 0px black;
+          box-shadow: 0 0 3px 2px #0000001a, 0 2px 3px 0px black;
+}
+/*# sourceMappingURL=Popover.css.map */

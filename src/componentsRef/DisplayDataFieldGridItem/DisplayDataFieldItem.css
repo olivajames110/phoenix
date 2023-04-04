@@ -1,0 +1,82 @@
+.display-data-field-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.7rem !important;
+}
+
+.display-data-field-item.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.display-data-field-item.row .display-data-field-item__value {
+  margin-top: 0;
+  margin-left: 4px;
+}
+
+.display-data-field-item#primary-item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0px 10px 0 6px;
+  font-size: 0.9rem !important;
+}
+
+.display-data-field-item#primary-item span {
+  font-family: var(--mont) !important;
+  margin-top: 0px;
+}
+
+.display-data-field-item#primary-item span.display-data-field-item__label {
+  margin-right: 4px;
+}
+
+.display-data-field-item span {
+  font-size: 0.7rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: #242526;
+}
+
+.display-data-field-item span.display-data-field-item__label {
+  font-weight: 500;
+}
+
+.display-data-field-item span.display-data-field-item__value {
+  font-weight: 700;
+}
+
+.display-data-field-item .MuiChip-root {
+  height: 22px;
+}
+
+.display-data-field-item .MuiChip-root .MuiChip-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 0.8rem;
+  padding-left: 6px;
+}
+
+.display-data-field-item .MuiChip-root .MuiChip-deleteIconSmall {
+  margin-right: 1px;
+}
+
+.display-data-field-item #add.MuiIconButton-root {
+  padding: 5px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=DisplayDataFieldItem.css.map */

@@ -1,0 +1,186 @@
+#general-upload {
+  position: relative;
+}
+
+#general-upload .refresh-button {
+  position: absolute;
+  right: 5px;
+  top: -30px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 80ms ease;
+  transition: 80ms ease;
+}
+
+#general-upload .refresh-button.spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+#general-upload .refresh-button:hover {
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+#general-upload .refresh-button svg {
+  height: 18px;
+  width: 18px;
+  color: var(--black);
+}
+
+#general-upload .file-thumbail-container {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#general-upload .file-thumbail-container th:nth-child(4) {
+  width: 45px;
+}
+
+#general-upload .file-thumbail-container .input-table-outer-wrapper {
+  border: 2px solid #d4d4d4;
+  border-top: 0;
+}
+
+#general-upload .file-thumbail-container div,
+#general-upload .file-thumbail-container td,
+#general-upload .file-thumbail-container span,
+#general-upload .file-thumbail-container input {
+  font-size: 0.7rem !important;
+}
+
+#general-upload .file-thumbail-container .input-table th {
+  padding: 4px 6px;
+}
+
+#general-upload .file-thumbail-container .input-table th {
+  font-weight: 600;
+}
+
+#general-upload .file-thumbail-container .input-table td:last-child,
+#general-upload .file-thumbail-container .input-table th:last-child {
+  width: 30px;
+}
+
+#general-upload .file-thumbail-container .editable-field__value {
+  margin-left: 0;
+}
+
+#general-upload .file-thumbail-container .editable-field__value .MuiFilledInput-root {
+  border: none;
+  border-radius: 0px;
+}
+
+#general-upload .file-thumbail-container button#delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#general-upload .document-upload-card {
+  min-height: unset !important;
+}
+
+#general-upload .general-documents-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#general-upload .general-documents-inner-wrapper #file-upload {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#general-upload .general-documents-inner-wrapper .form-field#general-select {
+  max-width: 320px;
+  margin-top: 0 !important;
+}
+
+#general-upload .upload-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+#general-upload .upload-button-wrapper button#upload-files-button {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+#general-upload .upload-button-wrapper button#upload-files-button span {
+  margin-right: 6px;
+}
+
+#general-upload .upload-button-wrapper button#upload-files-button .icon-wrapper {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .article.document-upload-group-item {
+    margin: 0 !important;
+  }
+}
+/*# sourceMappingURL=GeneralDocumentUpload.css.map */

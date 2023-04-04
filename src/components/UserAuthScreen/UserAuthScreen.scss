@@ -1,0 +1,32 @@
+.main-inner-wrapper {
+  flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  // max-width: 800px;
+
+  justify-content: space-around;
+  // background-color: beige;
+  margin: 0 auto;
+}
+
+//Desktop
+@media only screen and (min-width: 600px) {
+  main.login {
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 600px) {
+  main.login {
+    padding-bottom: 80px;
+    .main-inner-wrapper {
+      flex-wrap: wrap !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.text-editor__toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.text-editor__toolbar .toolbar__format-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1px;
+}
+
+.text-editor__toolbar .toolbar__format-actions button.text-editor-toolbar-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  height: 34px;
+  width: 34px;
+  padding: 0;
+}
+
+.text-editor__toolbar .toolbar__format-actions button.text-editor-toolbar-button.active {
+  background-color: #2356851c;
+}
+
+.text-editor__toolbar .toolbar__format-actions button.text-editor-toolbar-button#highlight svg {
+  color: #adad00;
+}
+
+.text-editor__toolbar .toolbar__format-actions button.text-editor-toolbar-button#color svg {
+  color: #ab2828;
+}
+
+.text-editor__toolbar .additional-actions .text-editor-toolbar-button {
+  padding: 6px 10px;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=TextEditorToolbarActions.css.map */

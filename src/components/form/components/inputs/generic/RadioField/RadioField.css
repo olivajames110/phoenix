@@ -1,0 +1,30 @@
+#radio-field {
+  position: relative;
+  text-align: left;
+}
+
+#radio-field .radio-field-options.vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#radio-field .MuiFormControlLabel-root {
+  margin-right: 20px;
+  margin-left: -8px;
+}
+
+#radio-field .MuiTypography-root {
+  font-size: 0.75rem !important;
+  margin-left: -5px;
+  color: #666666;
+}
+
+.MuiRadio-root.Mui-checked {
+  color: #235685 !important;
+}
+/*# sourceMappingURL=RadioField.css.map */

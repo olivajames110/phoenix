@@ -1,0 +1,82 @@
+.mui-dialog h2.mui-dialog-title {
+  padding: 24px 24px 22px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: var(--mont);
+  font-weight: 600;
+  opacity: 0.85;
+  color: #172b4d;
+}
+
+.mui-dialog .dialog-body .status-graphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__item span {
+  font-size: 0.9rem;
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__item .label {
+  font-weight: 500;
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__item .value {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  margin-left: 8px;
+  color: var(--blueButton);
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 12px;
+  height: 14px;
+  opacity: 0.85;
+}
+
+.mui-dialog .dialog-body .status-graphic .status-graphic__arrow svg {
+  opacity: 0.8;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.mui-dialog .dialog-footer button {
+  font-weight: 600;
+}
+
+.MuiDialog-root .MuiBackdrop-root {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background: rgba(9, 30, 66, 0.54);
+}
+/*# sourceMappingURL=MuiDialogModal.css.map */

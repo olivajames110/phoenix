@@ -1,0 +1,36 @@
+.static-form-label {
+  & > label {
+    text-align: left;
+
+    color: var(--black);
+
+    // font-weight: 600;
+    // font-size: 0.75rem;
+    // line-height: 1.8rem;
+    // font-family: var(--mont);
+
+    white-space: normal;
+
+    text-overflow: unset;
+    overflow: unset;
+
+    color: var(--black);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    padding-bottom: 5px;
+  }
+  &.bold {
+    position: relative;
+    // padding-top: 10px;
+    & > label {
+      // font-size: 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      // font-weight: bold;
+      // border-bottom: 1px solid #6a798945;
+      // padding-bottom: 5px;
+      // margin-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.flatiron-table table {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: #ffffff;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.flatiron-table table thead {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e2e2 !important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 111;
+}
+
+.flatiron-table table thead th {
+  font-weight: 500;
+  padding: 10px !important;
+  color: #000000b9;
+  font-size: 0.65rem;
+  line-height: 0.9rem;
+}
+
+.flatiron-table table tbody tr {
+  position: relative;
+}
+
+.flatiron-table table tbody tr:not(:first-child) {
+  border-top: 1px solid #e5e7ebc7;
+}
+
+.flatiron-table table tbody tr.total {
+  border-top: 2px solid gray;
+  background-color: #80808007;
+}
+
+.flatiron-table table tbody tr.total td.total {
+  background-color: #80808012;
+  border: var(--border);
+}
+
+.flatiron-table table tbody tr td {
+  padding: 8px 10px;
+  font-size: 0.7rem;
+}
+
+.flatiron-table table tbody tr td .no-border .MuiFilledInput-root {
+  border: none;
+}
+
+.flatiron-table table tbody tr td .no-rounded-border .MuiFilledInput-root {
+  border: none;
+  border-radius: 0 !important;
+}
+
+.flatiron-table table tbody tr td .no-rounded-border .MuiFilledInput-root::before, .flatiron-table table tbody tr td .no-rounded-border .MuiFilledInput-root::after {
+  border-radius: 0 !important;
+}
+/*# sourceMappingURL=FlatironTable.css.map */

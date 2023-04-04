@@ -1,0 +1,20 @@
+.MuiSnackbar-root#snackbar-alert {
+  // position: absolute;
+  // bottom: 44px;
+  box-shadow: var(--bs);
+
+  // border-left: 4px solid green;
+  border-left: 4px solid green;
+  svg {
+    color: (--black);
+  }
+  &.warning {
+    border-left: 4px solid #ed6c02;
+  }
+  &.error {
+    border-left: 4px solid #d32f2f;
+  }
+  &.info {
+    border-left: 4px solid #0288d1;
+  }
+}

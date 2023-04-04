@@ -1,0 +1,38 @@
+.dashboard-widget.primary {
+  position: relative;
+  article.border-card {
+    padding: 0;
+  }
+  header.primary-widget-header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.211);
+    // padding-top: 5px;
+    // padding-bottom: 15px;
+    padding: 15px 10px;
+    .primary-widget-title {
+      width: 100%;
+      h2 {
+        padding-top: 0;
+        font-size: 16px;
+        color: var(--black);
+        opacity: 0.9;
+      }
+
+      .border-card {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .icon-wrapper {
+        background-color: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 100%;
+        svg {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

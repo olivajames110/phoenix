@@ -1,0 +1,44 @@
+.file-action-popover-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button.popover-button {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 5px;
+    &#direct-download {
+      margin-top: 3px;
+    }
+    svg {
+      fill: var(--blue);
+      height: 16px;
+      width: 16px !important;
+    }
+  }
+}
+.file-name-value {
+  &#new {
+    margin-bottom: 10px;
+  }
+}
+
+// button.popover-return {
+//   display: flex;
+//   align-items: center;
+//   padding: 0;
+//   color: gray;
+//   font-size: 0.75rem;
+//   margin-bottom: 20px;
+//   font-weight: normal;
+//   margin-top: 0px;
+//   min-width: 230px;
+//   margin-left: -5px;
+//   width: fit-content;
+//   span.icon {
+//     display: flex;
+//     align-items: center;
+//     color: inherit;
+//   }
+// }

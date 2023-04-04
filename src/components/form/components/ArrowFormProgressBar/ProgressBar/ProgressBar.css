@@ -1,0 +1,23 @@
+#progress-bar.arrow-form-progress-bar {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .step-title {
+    font-size: 0.5rem;
+  }
+  .active .step-title {
+    font-size: 0.6rem !important;
+  }
+}
+/*# sourceMappingURL=ProgressBar.css.map */

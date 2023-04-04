@@ -1,0 +1,101 @@
+.doc-group-table-card-outer-wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  // margin-bottom: 20px;
+  border-bottom: 1px dashed rgb(228, 228, 228);
+  // background-color: red;
+  overflow: unset;
+  // margin: 0px 0px 0 -5px;
+  // padding: 15px 5px 15px 5px;
+  &:first-child {
+    padding-top: 10px;
+  }
+  &.selected {
+    article.doc-group-table-card {
+      animation: selected 250ms ease-in-out;
+      animation-fill-mode: forwards;
+    }
+  }
+  article.doc-group-table-card {
+    border: 2px solid #bebdbd57;
+
+    border-radius: 4px;
+    overflow: hidden;
+    .doc-group-table-card__header {
+      padding: 6px 10px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #e9ecef80;
+      // background-color: #e9ecef;
+      // background-color: #f4f5f6;
+      h2 {
+        // color: var(--black);
+        color: var(--blue);
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0;
+      }
+      .header-buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          display: flex;
+          align-items: center;
+          padding: 3px 5px;
+          margin-left: 10px;
+          border: 1px solid transparent;
+
+          span {
+            color: var(--blue);
+            font-weight: 600;
+
+            margin-left: 3px;
+            font-size: 0.7rem;
+            line-height: 0.5rem;
+          }
+          svg {
+            display: block;
+            height: 14px;
+            width: 14px;
+            color: var(--blue);
+          }
+          &.active {
+            background-color: #39679129;
+            border-color: #39679148;
+          }
+          &:hover {
+            background-color: #3967911b;
+          }
+        }
+      }
+    }
+    .doc-group-table-card__body {
+      position: relative;
+      .doc-group-file-upload {
+        padding: 10px 10px;
+      }
+      .file-upload-box {
+        height: 70px !important;
+        // background-color: #ffffff !important;
+        border: 1px dashed #d4d4d4;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}
+
+@keyframes selected {
+  0% {
+    // opacity: 1;
+    border: 2px solid #1c466a49;
+    // background-color: rgba(234, 238, 245, 0.622);
+  }
+  100% {
+    border: 2px solid #bebdbd57;
+    // background-color: rgba(128, 128, 128, 0);
+    // opacity: 0;
+  }
+}

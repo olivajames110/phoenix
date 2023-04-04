@@ -1,0 +1,46 @@
+header#portal-nav {
+  z-index: 5;
+
+  // &::after {
+  //   content: "";
+  //   background-image: linear-gradient(
+  //     45deg,
+  //     #285b8a 0%,
+  //     #21517d 33%,
+  //     #235380 50%,
+  //     #25537e 67%,
+  //     #2d577c 100%
+  //   );
+  //   position: absolute;
+  //   bottom: 10px;
+  //   left: 0;
+  //   width: 100vw;
+  //   z-index: 1;
+  //   height: 600px;
+  // }
+}
+
+#borrower-dashboard {
+  position: relative;
+  z-index: 10;
+
+  .apexchartsapexchart-example {
+    min-height: unset !important;
+  }
+  #dashboard-header {
+    // padding: 10px 0 20px;
+    // padding-bottom: 15px;
+    .welcome-message {
+      h1 {
+        // color: #ffffff;
+        color: var(--blue);
+        // color: #1c456a;
+        // opacity: 0.9;
+        font-weight: 700;
+        // font-size: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

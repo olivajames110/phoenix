@@ -1,0 +1,74 @@
+$fontSize: 0.65rem;
+$fontSizeBody: 0.7rem;
+// $fontSize: 0.7rem;
+
+.flatiron-table {
+  // border: 2px solid #bebdbd57;
+  // border-radius: 4px;
+  // overflow: hidden;
+
+  table {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    background: #ffffff;
+    border-collapse: collapse;
+    border-radius: 10px;
+    thead {
+      background-color: #ffffff;
+      // border-top: 1px solid #e2e2e2 !important;
+      border-bottom: 1px solid #e2e2e2 !important;
+
+      position: sticky;
+      top: 0;
+      // background: #ffffff;
+      z-index: 111;
+      th {
+        // font-weight: 600;
+        font-weight: 500;
+        padding: 10px !important;
+        color: #000000b9;
+        font-size: $fontSize;
+        line-height: 0.9rem;
+      }
+    }
+
+    tbody {
+      tr {
+        position: relative;
+
+        &:not(:first-child) {
+          border-top: 1px solid #e5e7ebc7;
+        }
+
+        &.total {
+          border-top: 2px solid gray;
+          background-color: #80808007;
+          td.total {
+            background-color: #80808012;
+            border: var(--border);
+          }
+        }
+        td {
+          padding: 8px 10px;
+          font-size: $fontSizeBody;
+          // overflow: hidden;
+          .no-border .MuiFilledInput-root {
+            border: none;
+          }
+          .no-rounded-border .MuiFilledInput-root {
+            border: none;
+            border-radius: 0 !important;
+            &::before,
+            &::after {
+              border-radius: 0 !important;
+            }
+          }
+          // .no-rounded-border.MuiOutlinedInput-notchedOutline {
+          //   border-radius: 0 !important;
+          // }
+        }
+      }
+    }
+  }
+}

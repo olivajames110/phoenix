@@ -1,0 +1,130 @@
+#files #preview-loader {
+  color: #ffffff;
+}
+
+#files tr.final {
+  position: relative;
+  background-color: #44d60009;
+  background: -webkit-gradient(linear, left top, right top, from(#44d6000e), to(#44d60003));
+  background: linear-gradient(90deg, #44d6000e 0%, #44d60003 100%);
+  color: #43742a !important;
+}
+
+#files tr.final::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  height: 84%;
+  top: 50%;
+  width: 2px;
+  background-color: #43742a;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#files tr.final span {
+  color: #43742a;
+}
+
+#files tr.final td {
+  color: #43742a;
+}
+
+#files tr.final td svg {
+  color: #43742a;
+  fill: #43742a;
+}
+
+#files tr.hidden {
+  background-color: rgba(128, 128, 128, 0.073);
+  color: var(--black) !important;
+}
+
+#files tr.hidden td {
+  opacity: 0.75;
+}
+
+#files .table-title th {
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+
+#files table.file-document-table {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: #ffffff;
+  border-collapse: collapse;
+}
+
+#files table.file-document-table tr {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1.5fr 1.2fr 1fr 1fr 65px;
+      grid-template-columns: 1.5fr 1.2fr 1fr 1fr 65px;
+}
+
+#files table.file-document-table.categorized tr {
+  -ms-grid-columns: 1.5fr 1.2fr 1fr 65px !important;
+      grid-template-columns: 1.5fr 1.2fr 1fr 65px !important;
+}
+
+#files table.file-document-table th {
+  font-weight: 600;
+  padding: 10px !important;
+}
+
+#files table.file-document-table td {
+  padding: 8px 10px !important;
+}
+
+#files table.file-document-table td,
+#files table.file-document-table th {
+  color: #000000b9;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+#files table.file-document-table thead {
+  background-color: #ffffff !important;
+  border-top: 1px solid #e2e2e2 !important;
+  border-bottom: 1px solid #e2e2e2 !important;
+}
+
+#files table.file-document-table tbody .icon-table-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#files table.file-document-table tbody .icon-table-cell#hidden svg {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+#files table.file-document-table tbody .icon-table-cell svg {
+  margin-right: 4px;
+}
+
+#files table.file-document-table tbody .icon-table-cell span {
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+#files table.file-document-table tbody tr td {
+  color: rgba(0, 0, 0, 0.87) !important;
+  text-decoration: none !important;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+#files table.file-document-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+/*# sourceMappingURL=FileDocGroupTable.css.map */

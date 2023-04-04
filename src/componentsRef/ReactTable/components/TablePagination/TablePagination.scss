@@ -1,0 +1,28 @@
+.table-pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .table-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin-right: 20px;
+    &.active {
+      background-color: #1c456a1a;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .MuiPagination-text button {
+    font-size: 0.7rem;
+  }
+  .MuiPaginationItem-root {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+}

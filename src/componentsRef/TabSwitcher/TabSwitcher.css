@@ -1,0 +1,90 @@
+.tab-switcher {
+  position: relative;
+}
+
+.tab-switcher .MuiBadge-badge {
+  min-width: 16px;
+  height: 16px;
+  padding: 0 2px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+
+.tab-switcher .MuiTabs-scroller {
+  overflow-x: auto !important;
+}
+
+.tab-switcher.sub .Mui-selected {
+  font-weight: 400;
+}
+
+.tab-switcher.sub .MuiTabs-indicator {
+  height: 2px;
+}
+
+.tab-switcher.sub .MuiButtonBase-root {
+  text-transform: capitalize;
+  padding: 4px 8px;
+  min-height: 30px !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+}
+
+.tab-switcher.sub .MuiTabs-root {
+  min-height: 24px;
+}
+
+.tab-switcher.sub .MuiTab-root {
+  font-weight: 500 !important;
+}
+
+.tab-switcher .MuiTabs-root {
+  min-height: 42px;
+}
+
+.tab-switcher #add-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab-switcher #add-new svg {
+  display: block;
+  height: 22px;
+  width: 22px;
+  color: var(--blue);
+}
+
+.tab-switcher .MuiButtonBase-root {
+  text-transform: capitalize;
+  padding: 4px 10px;
+  opacity: 1;
+  min-height: 42px;
+  font-size: 0.75rem;
+  color: #000000c9;
+}
+
+.tab-switcher .MuiTabs-indicator {
+  background-color: #235685b0 !important;
+  height: 3px;
+  border-radius: 40px;
+}
+
+.tab-switcher .MuiTab-root {
+  min-width: 0px;
+}
+
+.tab-switcher .MuiTab-root.Mui-selected {
+  color: var(--blueButton) !important;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f8ff), to(#ffffff00));
+  background-image: linear-gradient(to top, #f0f8ff, #ffffff00);
+  min-width: none;
+}
+/*# sourceMappingURL=TabSwitcher.css.map */

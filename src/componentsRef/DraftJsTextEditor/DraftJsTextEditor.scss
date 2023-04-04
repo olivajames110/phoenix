@@ -1,0 +1,34 @@
+.draft-js-root-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 100%;
+  .DraftEditor-root {
+    position: relative;
+    // height: 100%;
+    flex-grow: 1;
+    span {
+      //font size for all text
+      font-size: 0.7rem;
+    }
+    .public-DraftEditorPlaceholder-root {
+      //Placeholder icon
+      position: absolute;
+      opacity: 0.6;
+      top: 10px;
+      left: 10px;
+      z-index: 11;
+    }
+    .DraftEditor-editorContainer {
+      height: 100%;
+      flex-grow: 1;
+      z-index: 1111;
+      position: relative;
+      .public-DraftEditor-content {
+        height: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}

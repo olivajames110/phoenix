@@ -1,0 +1,50 @@
+.drilldown-header-title {
+  // padding-left: 16px;
+  white-space: nowrap;
+  // padding-right: 16px;
+}
+h2.drilldown-header-title {
+  color: var(--blue) !important;
+  // color: var(--black);
+  font-size: 1.2rem;
+  // font-weight: 500;
+  // font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  // color: inherit;
+  font-family: var(--mont);
+  margin-bottom: 10px;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+}
+
+h3.drilldown-header-title {
+  // color: var(--blueButton) !important;
+  font-size: 1rem;
+  // font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  // text-transform: uppercase;
+  // font-weight: 700;
+  // color: var(--black);
+  color: var(--blue) !important;
+  // color: var(--blue) !important;
+  padding: 12px inherit;
+  color: inherit;
+  // padding-top: 16px;
+  // padding-bottom: 8px;
+  font-family: var(--mont);
+  // padding-bottom: 16px;
+}
+h4.drilldown-header-title {
+  color: var(--black) !important;
+  // color: var(--blueButton) !important;
+  // font-size: 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: var(--mont);
+  color: inherit;
+}

@@ -1,0 +1,26 @@
+header.app-header {
+  position: relative;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.app-header.blue {
+  background-image: linear-gradient(45deg, #285b8a 0%, #21517d 33%, #235380 50%, #25537e 67%, #2d577c 100%);
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+header.app-header.white {
+  background-color: #ffffff;
+  fill: #1c456a;
+}
+/*# sourceMappingURL=AppHeader.css.map */

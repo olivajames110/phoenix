@@ -1,0 +1,15 @@
+.form-submit-button {
+  background-color: #235685;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding: 16px;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  color: #ffffff;
+}
+
+.form-submit-button:hover {
+  background-color: var(--blueHover);
+}
+/*# sourceMappingURL=FormSubmitButton.css.map */

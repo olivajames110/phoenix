@@ -1,0 +1,22 @@
+.static-form-label > label {
+  text-align: left;
+  color: var(--black);
+  white-space: normal;
+  text-overflow: unset;
+  overflow: unset;
+  color: var(--black);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.static-form-label.bold {
+  position: relative;
+}
+
+.static-form-label.bold > label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=FormLabel.css.map */

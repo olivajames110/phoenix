@@ -1,0 +1,149 @@
+article.comment-message {
+  position: relative;
+  font-size: 0.7rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6b3;
+  z-index: 1111111111111;
+}
+
+article.comment-message .text-editor__toolbar {
+  padding: 5px;
+}
+
+article.comment-message .text-editor__toolbar button.submit-button {
+  font-size: 0.7rem;
+  background-color: var(--blue);
+  color: #ffffff;
+  padding: 2px 6px;
+}
+
+article.comment-message header.message__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  padding: 8px 8px 0;
+}
+
+article.comment-message header.message__header button {
+  padding: 0;
+}
+
+article.comment-message header.message__header .divider {
+  width: 1px;
+  background: #afafaf;
+  height: 10px;
+  margin: 0 6px;
+}
+
+article.comment-message header.message__header .message-header__user {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+article.comment-message header.message__header .message-action-button {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article.comment-message header.message__header .message-action-button svg {
+  margin-right: 3px;
+}
+
+article.comment-message header.message__header .message-action-button#edit {
+  margin-left: 10px;
+}
+
+article.comment-message .message-header__date,
+article.comment-message .message-action-button {
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+article.comment-message .message-header__date span,
+article.comment-message .message-action-button span {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+article.comment-message .DraftEditor-root {
+  padding: 8px;
+  padding-top: 2px;
+}
+
+article.comment-message .message__body p {
+  font-size: 0.7rem;
+}
+
+article.comment-message.is-stip::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #eed202;
+  z-index: 1111;
+}
+
+article.comment-message.is-reply .DraftEditor-editorContainer div,
+article.comment-message.is-reply .DraftEditor-editorContainer span {
+  height: 100%;
+}
+
+article.comment-message.is-reply .message__header {
+  padding-bottom: 0;
+}
+
+article.comment-message.is-reply .reply-line {
+  z-index: -1111;
+  position: absolute;
+  left: -10px;
+  top: -8px;
+  height: 50%;
+  width: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+article.comment-message.is-reply .reply-line::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #9c9ea0;
+  z-index: 1111;
+  border-radius: 6px;
+  border-right: none;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: -1;
+}
+
+article.comment-message.is-reply .message__body {
+  position: relative;
+}
+
+article.comment-message.is-editing .message__body {
+  padding: 0;
+}
+
+article.comment-message.is-editing .DraftEditor-root {
+  padding-bottom: 0px;
+  min-height: 50px;
+}
+/*# sourceMappingURL=TextEditorMessageCard.css.map */

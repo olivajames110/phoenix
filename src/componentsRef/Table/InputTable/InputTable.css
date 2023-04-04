@@ -1,0 +1,268 @@
+.input-table-outer-wrapper {
+  border: 1px solid #d4d4d4;
+}
+
+.input-table {
+  position: relative;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: #ffffff;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow: hidden;
+}
+
+.input-table#files {
+  margin-bottom: 20px;
+}
+
+.input-table#files th {
+  font-size: 0.7rem;
+}
+
+.input-table#files tbody tr:nth-child(2) td {
+  text-align: center;
+  padding: 30px 4px;
+}
+
+.input-table#files tbody tr:nth-child(2) .file-upload-box {
+  border-right: none;
+  border-radius: 0;
+}
+
+.input-table#files tbody tr:nth-child(2) td:nth-child(4) .file-upload-box {
+  border-right: 2px dashed #d4d4d4;
+}
+
+.input-table#files tbody td {
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.input-table#files tbody td:first-child {
+  width: 100px;
+}
+
+.input-table#files tbody td:nth-child(3) {
+  max-width: 60px;
+}
+
+.input-table#files tbody td:nth-child(4) {
+  padding: 0px !important;
+}
+
+.input-table#files tbody .file-upload-box {
+  height: 82px;
+  padding: 10px 15px;
+  border-radius: 0;
+}
+
+.input-table .file-upload__title {
+  font-size: 0.7rem !important;
+}
+
+.input-table.styled {
+  border-radius: 2px;
+}
+
+.input-table.styled thead tr {
+  background: #dcdcdc5e;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e2e2e2 !important;
+}
+
+.input-table.styled thead tr th {
+  color: var(--black);
+}
+
+.input-table.styled tbody {
+  border: none;
+}
+
+.input-table.static-rows .form-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-table.static-rows .form-field input {
+  padding: 5px !important;
+}
+
+.input-table.static-rows tr td:first-child {
+  padding: 5px;
+}
+
+.input-table.static-rows #radio-field {
+  margin-bottom: 0 !important;
+}
+
+.input-table.static-rows #radio-field span {
+  font-size: 0.7rem !important;
+}
+
+.input-table .form-field {
+  padding: 5px !important;
+}
+
+.input-table .form-field .MuiFilledInput-root,
+.input-table .form-field input {
+  border-radius: 0;
+  border: none;
+}
+
+.input-table .form-field .MuiFilledInput-root::before {
+  border-radius: 0;
+}
+
+.input-table .form-field .editable-field.vertical {
+  margin: 0;
+}
+
+.input-table th,
+.input-table td {
+  position: relative;
+  padding: 0px;
+  font-size: 0.7rem;
+}
+
+.input-table th:not(:last-child),
+.input-table td:not(:last-child) {
+  border-right: 1px solid #cbcbcb;
+}
+
+.input-table thead {
+  font-size: 0.8rem;
+}
+
+.input-table thead tr th {
+  position: relative;
+  font-size: 0.7rem;
+  opacity: 0.95;
+  font-weight: normal;
+  text-transform: capitalize;
+  padding: 4px;
+  border-right: none;
+  border-right: none !important;
+}
+
+.input-table thead tr:last-child {
+  font-weight: normal !important;
+}
+
+.input-table thead tr:nth-child(2) {
+  border: 1px solid #e7e7e7;
+}
+
+.input-table tbody {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.input-table tbody .form-field {
+  padding: 0;
+}
+
+.input-table tbody tr {
+  position: relative;
+  cursor: pointer;
+}
+
+.input-table tbody tr:not(:first-child) {
+  border-top: 1px solid #e5e7ebc7;
+}
+
+.input-table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.drilldown-table th {
+  font-size: 0.75rem;
+}
+
+.drilldown-table td {
+  font-size: 0.7rem;
+}
+
+.drilldown-table .drilldown-file-upload-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drilldown-table .drilldown-file-upload-status p {
+  font-size: 0.7rem;
+}
+
+.drilldown-table .drilldown-file-upload-status svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #006102;
+}
+
+.drilldown-table .file-upload__title {
+  font-size: 0.7rem !important;
+}
+
+.drilldown-table#files table {
+  table-layout: fixed;
+}
+
+.drilldown-table#files th {
+  font-size: 0.7rem;
+}
+
+.drilldown-table#files tbody tr:nth-child(2) td {
+  padding: 30px 4px;
+}
+
+.drilldown-table#files tbody tr:nth-child(2) .file-upload-box {
+  border-right: none;
+  border-radius: 0;
+}
+
+.drilldown-table#files tbody tr:nth-child(2) td:nth-child(4) .file-upload-box {
+  border-right: 2px dashed #d4d4d4;
+}
+
+.drilldown-table#files tbody td {
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.drilldown-table#files tbody td:first-child {
+  width: 100px;
+}
+
+.drilldown-table#files tbody td:nth-child(3) {
+  max-width: 60px;
+}
+
+.drilldown-table#files tbody td:nth-child(4) {
+  padding: 0px !important;
+}
+
+.drilldown-table#files tbody .file-upload-box {
+  height: 82px;
+  padding: 10px 15px;
+  border-radius: 0;
+}
+/*# sourceMappingURL=InputTable.css.map */

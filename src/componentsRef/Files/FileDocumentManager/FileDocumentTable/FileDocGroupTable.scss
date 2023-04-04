@@ -1,0 +1,124 @@
+#files {
+  #preview-loader {
+    color: #ffffff;
+  }
+  tr {
+    &.final {
+      position: relative;
+      background-color: #44d60009;
+      background: linear-gradient(90deg, #44d6000e 0%, #44d60003 100%);
+      color: #43742a !important;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        height: 84%;
+        top: 50%;
+        width: 2px;
+        background-color: #43742a;
+        transform: translateY(-50%);
+      }
+      span {
+        color: #43742a;
+      }
+      td {
+        color: #43742a;
+        // color: #43742a !important;
+        // font-weight: 600;
+        svg {
+          color: #43742a;
+          fill: #43742a;
+        }
+      }
+    }
+    &.hidden {
+      background-color: rgba(128, 128, 128, 0.073);
+      color: var(--black) !important;
+      td {
+        opacity: 0.75;
+      }
+    }
+  }
+  .table-title {
+    th {
+      font-size: 1rem !important;
+      font-weight: 500;
+    }
+  }
+  table.file-document-table {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    background: #ffffff;
+    border-collapse: collapse;
+    tr {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1.5fr 1.2fr 1fr 1fr 65px;
+    }
+    &.categorized {
+      tr {
+        grid-template-columns: 1.5fr 1.2fr 1fr 65px !important;
+      }
+    }
+
+    th {
+      font-weight: 600;
+      padding: 10px !important;
+      // padding: 4px 10px !important;
+    }
+
+    td {
+      padding: 8px 10px !important;
+    }
+
+    td,
+    th {
+      color: #000000b9;
+      font-size: 0.7rem;
+
+      cursor: pointer;
+    }
+
+    thead {
+      background-color: #ffffff !important;
+      // background-color: #f4f6f795 !important;
+      border-top: 1px solid #e2e2e2 !important;
+      border-bottom: 1px solid #e2e2e2 !important;
+    }
+
+    tbody {
+      .icon-table-cell {
+        display: flex;
+        align-items: center;
+        &#hidden {
+          svg {
+            color: rgba(0, 0, 0, 0.65) !important;
+          }
+        }
+        svg {
+          margin-right: 4px;
+        }
+        span {
+          font-size: 0.7rem;
+          text-overflow: ellipsis;
+          overflow-x: hidden;
+          white-space: nowrap;
+        }
+      }
+      tr {
+        td {
+          color: rgba(0, 0, 0, 0.87) !important;
+          text-decoration: none !important;
+          // white-space: no-wrap;
+          text-overflow: ellipsis;
+          overflow-x: hidden;
+          white-space: nowrap;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+        }
+      }
+    }
+  }
+}

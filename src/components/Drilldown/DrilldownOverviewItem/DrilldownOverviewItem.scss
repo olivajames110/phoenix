@@ -1,0 +1,63 @@
+.drilldown-overview-item {
+  // margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem !important;
+  &.row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .drilldown-overview-item__value {
+      margin-top: 0;
+      margin-left: 4px;
+    }
+  }
+  &#primary-item {
+    flex-direction: row;
+    // margin-left: 31px;
+    align-items: center;
+    padding: 0px 10px 0 6px;
+
+    font-size: 0.9rem !important;
+    span {
+      font-family: var(--mont) !important;
+      margin-top: 0px;
+      &.drilldown-overview-item__label {
+        margin-right: 4px;
+      }
+    }
+  }
+  span {
+    font-size: 0.7rem;
+    // opacity: 0.8;
+    font-family: inherit;
+    font-size: inherit;
+    color: #242526;
+
+    &.drilldown-overview-item__label {
+      font-weight: 500;
+    }
+
+    &.drilldown-overview-item__value {
+      margin-top: -4px;
+      font-weight: 600;
+    }
+  }
+  .MuiChip-root {
+    height: 22px;
+    .MuiChip-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      // opacity: 0.8;
+      line-height: 0.8rem;
+      padding-left: 6px;
+    }
+    .MuiChip-deleteIconSmall {
+      margin-right: 1px;
+    }
+  }
+  #add.MuiIconButton-root {
+    padding: 5px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,14 @@
+.form-submit-button {
+  background-color: #235685;
+  width: 100%;
+  font-size: 0.8rem;
+  // max-width: 400px;
+  // margin: 0 auto;
+  margin-top: 15px;
+  padding: 16px;
+  transition: 100ms;
+  color: #ffffff;
+  &:hover {
+    background-color: var(--blueHover);
+  }
+}

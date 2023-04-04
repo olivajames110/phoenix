@@ -1,0 +1,106 @@
+.dashboard-widget.ticker {
+  width: 100%;
+}
+
+.dashboard-widget.ticker .border-card {
+  position: relative;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dashboard-widget.ticker .border-card .title {
+  margin-top: 5px;
+  font-weight: 600;
+  line-height: 1.334;
+  line-height: 1.6rem;
+}
+
+.dashboard-widget.ticker .border-card .sub-title {
+  line-height: 1.5;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dashboard-widget.ticker .icon-wrapper {
+  background-color: #1c456a14;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.dashboard-widget.ticker .icon-wrapper .MuiSvgIcon-fontSizeMedium {
+  font-size: 2.4rem;
+}
+
+.dashboard-widget.ticker .icon-wrapper .MuiBadge-badge {
+  background-color: var(--green);
+}
+
+.dashboard-widget.ticker .icon-wrapper svg {
+  color: #36455261;
+}
+
+.dashboard-widget.ticker #action-button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.dashboard-widget.ticker #action-button svg {
+  color: var(--black);
+  opacity: 0.55;
+}
+
+.dashboard-widget.ticker.warning .icon-wrapper {
+  background-color: #9b9d181e;
+}
+
+.dashboard-widget.ticker.warning .icon-wrapper svg {
+  color: #bcbe3e;
+}
+
+.dashboard-widget.ticker.warning .ticker-widget-status__value {
+  color: #9b9d18;
+}
+
+.dashboard-widget.ticker.completed .icon-wrapper {
+  background-color: #0c630f1a;
+}
+
+.dashboard-widget.ticker.completed .icon-wrapper svg {
+  color: #0c630f;
+}
+
+.dashboard-widget.ticker.completed .ticker-widget-status__value {
+  color: #0c630f;
+}
+
+.ticker-widget-status {
+  position: relative;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ticker-widget-status div {
+  font-size: 0.75rem;
+}
+
+.ticker-widget-status .ticker-widget-status__value {
+  color: inherit;
+  font-weight: 600;
+  margin-left: 4px;
+}
+/*# sourceMappingURL=TickerWidget.css.map */

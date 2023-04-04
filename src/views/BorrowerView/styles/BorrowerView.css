@@ -1,0 +1,35 @@
+#borrower.user-view {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+#borrower.user-view header {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+#borrower.user-view #dashboard-group {
+  padding: 0;
+}
+
+#borrower.user-view .nav-link-group span.MuiTypography-root {
+  font-size: 0.7rem !important;
+}
+
+#borrower.user-view .nav-link-item.active {
+  border-right: 3px solid #90afcd;
+  border-radius: 0px;
+}
+
+.backdrop {
+  background-color: rgba(9, 30, 66, 0.54);
+}
+/*# sourceMappingURL=BorrowerView.css.map */

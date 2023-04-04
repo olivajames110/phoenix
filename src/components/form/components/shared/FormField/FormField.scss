@@ -1,0 +1,282 @@
+.form-field {
+  position: relative;
+  width: 100%;
+  // margin-top: 15px;
+  // background-color: rgba(128, 128, 128, 0.476);
+  text-align: left;
+  // background: #ff00000d;
+  // padding: 5px 0;
+  // padding: 5px;
+  .MuiFormControl-root {
+    position: relative;
+    z-index: 5;
+  }
+  .MuiInputBase-root:hover:not(.Mui-disabled):before {
+    border-color: #2356859e;
+  }
+  &.modified .MuiFormControl-root:after {
+    content: "Modified";
+    // border-top-right-radius: 4px;
+    // border-bottom-left-radius: 6px;
+    border-radius: 4px;
+    position: absolute;
+    background: #fce4d1;
+    top: 2px;
+    font-weight: 500;
+    right: 2px;
+    color: #ed6c02;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0px 3px;
+    // background: #b89b1d4f;
+    // border-top-right-radius: 4px;
+    // border-bottom-left-radius: 8px;
+    // position: absolute;
+    // top: 0;
+    // font-weight: 700;
+    // right: 0;
+    // font-size: 10px;
+    // line-height: 18px;
+    // padding: 0px 5px;
+    ////// V2
+    // content: "";
+    // background: #2356859e;
+    // // background: #b89b1d;
+    // border-radius: 108px;
+    // position: absolute;
+    // top: 50%;
+    // right: 4px;
+    // width: 3px;
+    // height: 80%;
+    // transform: translatey(-50%);
+
+    /////V3
+    // content: "";
+    // border: 1px solid #b89b1d;
+    // border-radius: 4px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // width: 100%;
+    // height: 101%;
+    // z-index: -1;
+    // transform: translate(-50%, -50%);
+  }
+  .MuiFormHelperText-root {
+    // margin-top: -5px;
+    margin-left: 6px;
+    margin-bottom: 8px;
+  }
+  &.vertical {
+    .MuiFormHelperText-root {
+      margin-top: -5px;
+      // margin-left: 0px;
+    }
+  }
+  &.no-side-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.no-padding {
+    padding: 0;
+  }
+
+  .MuiSvgIcon-root {
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: -4px;
+  }
+  .MuiFilledInput-root {
+    // padding-left: 8px;
+    .MuiInputAdornment-root {
+      // margin-left: 4px;
+      margin-right: 0px;
+    }
+  }
+  &#text-area-field-component {
+    padding: 0 !important;
+    .MuiFilledInput-root {
+      padding: 0 !important;
+      textarea {
+        padding: 22px 10px 10px;
+        // padding: 10px;
+      }
+    }
+  }
+  &.display-field {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .error {
+    color: var(--red);
+    border-color: var(--red) !important;
+    font-size: 0.7rem !important;
+    right: 5px;
+    bottom: 0px;
+  }
+
+  .Mui-disabled {
+    // font-weight: 600;
+    font-size: 0.8rem;
+    border: none;
+    -webkit-text-fill-color: #000000 !important;
+    // color: red;
+  }
+  //For file thumbnail
+  .file-thumbail-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d2d2d2;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    .file-thumbnail-path {
+      // padding: 0 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 0.7rem;
+        padding: 8px !important;
+      }
+      button {
+        padding: 8px !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg {
+          display: block;
+          color: var(--blue);
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  //For inputs unaccessable to MUI error state
+  .custom-required-input {
+    &::after {
+      border-bottom: 2px solid #153450;
+      left: 0;
+      bottom: 0;
+      content: "";
+      position: absolute;
+      right: 0;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+      transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+      pointer-events: none;
+      border-radius: 4px;
+      border-color: transparent;
+    }
+    &.required-error {
+      color: #d32f2f !important;
+      &::after {
+        border-bottom-color: #d32f2f;
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &.slim {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // padding: 5px 0;
+    // padding-top: 8px;
+    .MuiFilledInput-input {
+      // background: #000;
+      padding-left: 4px;
+      font-size: 0.7rem;
+      padding: 4px;
+      font-weight: 600;
+    }
+    .MuiInputAdornment-root {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      color: var(--black);
+    }
+
+    &.editing {
+      border: none;
+      .MuiInput-root {
+        border-width: 1px;
+        .MuiInput-input {
+          font-weight: normal;
+        }
+      }
+    }
+    input {
+      padding: 4px;
+    }
+    span {
+      font-size: 0.7rem;
+    }
+    .drilldown-item {
+      position: relative;
+      .drilldown-item__label {
+        opacity: 0.95;
+      }
+      .drilldown-item__value {
+        font-weight: 600;
+        margin-left: 3px;
+      }
+      &.vertical {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5px;
+        .drilldown-item__value {
+          margin-left: 0px;
+        }
+      }
+      &.fixed-value {
+        background-color: gray;
+      }
+      &.editing {
+        border: none;
+        .MuiInput-root {
+          border-width: 1px;
+          .MuiInput-input {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    fieldset {
+      display: none;
+    }
+    .MuiInput-root {
+      border-width: 0px;
+
+      .MuiInput-input {
+        padding-left: 4px;
+        font-size: 0.7rem;
+        padding: 4px;
+        font-weight: 600;
+      }
+    }
+    .Mui-disabled {
+      font-weight: 600;
+      font-size: 0.7rem;
+      border: none;
+      -webkit-text-fill-color: #0000009e !important;
+      // color: red;
+    }
+  }
+}
+
+.MuiFormControl-root .MuiInputLabel-root {
+  color: #000000d3 !important;
+}
+
+.MuiInputBase-root-MuiFilledInput-root {
+  &:before {
+    border-radius: 0px !important;
+  }
+}

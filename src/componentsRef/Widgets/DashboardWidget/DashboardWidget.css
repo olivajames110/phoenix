@@ -1,0 +1,28 @@
+.dashboard-widget {
+  width: 100%;
+}
+
+.dashboard-widget .border-card {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.dashboard-widget .icon-wrapper {
+  background-color: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.dashboard-widget .icon-wrapper svg {
+  color: #ffffff;
+}
+/*# sourceMappingURL=DashboardWidget.css.map */

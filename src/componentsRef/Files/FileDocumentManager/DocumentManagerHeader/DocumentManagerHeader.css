@@ -1,0 +1,40 @@
+.document-manager-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.document-manager-header .document-manager-header__title {
+  font-size: 1rem !important;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.document-manager-header .document-manager-header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.document-manager-header .document-manager-header__actions .document-manager-header-action-item label {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.document-manager-header .document-manager-header__actions .document-manager-header-action-item .MuiTypography-root,
+.document-manager-header .document-manager-header__actions .document-manager-header-action-item button span {
+  opacity: 0.8 !important;
+  color: var(--black);
+  font-size: 0.75rem !important;
+}
+/*# sourceMappingURL=DocumentManagerHeader.css.map */

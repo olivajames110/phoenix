@@ -1,0 +1,13 @@
+.drilldown-section-group {
+  margin-bottom: 30px;
+}
+
+.drilldown-section-group.padding {
+  padding: 0 16px;
+}
+
+.drilldown-section-group.border-bottom {
+  border-bottom: 2px dashed #bdbdbd;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=DrilldownSectionGroup.css.map */

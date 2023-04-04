@@ -1,0 +1,55 @@
+#loan-status-key {
+  .status-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .status-item__icon {
+      padding: 2px;
+      border-radius: 6px;
+      background-color: #cbcbc53a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6a6a6e;
+      border: 1px solid #d3d3d3;
+      svg {
+        color: #6a6a6e;
+      }
+    }
+
+    .status-item__label {
+      margin-left: 5px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #6a6a6e;
+      white-space: nowrap;
+    }
+
+    &.pending {
+      .status-item__label {
+        color: #7b7b0b;
+      }
+      .status-item__icon {
+        background-color: #b8b8082f;
+        border: 1px solid #dddd90;
+        svg {
+          color: #7b7b0b;
+          // color: #b8b808;
+        }
+      }
+    }
+    &.completed {
+      .status-item__label {
+        color: #43742a;
+      }
+      .status-item__icon {
+        background-color: #e0f3d6;
+        border: 1px solid #43742a63;
+        // border: 1px solid #43742a63;
+        svg {
+          color: #43742a;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.svg-icon-wrapper {
+  // width: 120px;
+  display: flex;
+  // margin: 0 auto;
+  justify-content: center;
+  transition: 100ms;
+  &.active {
+    transform: rotate(180deg);
+  }
+  svg {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.wizard-page-sub-header {
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  /* text-transform: uppercase; */
+  /* margin-bottom: -5px; */
+  color: #215282;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  font-weight: 600;
+  font-family: var(--mont) !important;
+}
+/*# sourceMappingURL=WizardPageSubHeader.css.map */

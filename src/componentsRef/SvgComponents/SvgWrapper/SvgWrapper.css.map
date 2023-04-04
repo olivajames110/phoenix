@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAEhB,OAAO,EAAE,IAAI;EAEb,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,KAAK;CAOlB;;AAZD,AAME,iBANe,AAMd,OAAO,CAAC;EACP,SAAS,EAAE,cAAc;CAC1B;;AARH,AASE,iBATe,CASf,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "SvgWrapper.scss"
+    ],
+    "names": [],
+    "file": "SvgWrapper.css"
+}

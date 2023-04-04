@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EAGtB,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,MAAM;EACnB,gCAAgC;EAChC,0BAA0B;EAG1B,KAAK,EAAE,OAAO;EAEd,sBAAsB,EAAE,WAAW;EACnC,UAAU,EAAE,IAAI;EAGhB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,WAAW,CAAC,UAAU;CAIpC",
+    "sources": [
+        "WizardPageSubHeader.scss"
+    ],
+    "names": [],
+    "file": "WizardPageSubHeader.css"
+}

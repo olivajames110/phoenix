@@ -1,0 +1,68 @@
+.landing-page__header h1 {
+  color: #3a3a3a;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 2.2rem;
+}
+
+.landing-page__header p {
+  color: #707070;
+  font-size: 0.9rem;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.landing-page__header .logos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.landing-page__header .logos-container .combined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-page__header .logos-container .combined #flat-iron-logo {
+  margin-left: 0;
+  padding-right: 10px;
+  margin-right: 10px !important;
+  border-right: 1px solid rgba(128, 128, 128, 0.372);
+}
+
+.landing-page__header .logos-container .combined .auction-logo-wrapper svg {
+  display: block;
+  height: 24px;
+  width: 100%;
+}
+
+.landing-page__header .logos-container .logo-wrapper {
+  width: 120px;
+  margin: 0 15px;
+}
+
+.landing-page__header .logos-container .logo-wrapper svg {
+  height: 100%;
+  width: 100%;
+}
+
+.landing-page__header .logos-container .logo-wrapper img {
+  width: 100%;
+}
+
+.landing-page__header .header-content {
+  text-align: center;
+  padding: 15px 0 0;
+}
+/*# sourceMappingURL=LandingPageHeader.css.map */

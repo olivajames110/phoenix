@@ -1,0 +1,39 @@
+#searchable {
+  tr {
+    cursor: pointer;
+  }
+}
+
+// .table-and-filter-outer-wrapper {
+//   display: flex;
+//   gap: 20px;
+//   flex-wrap: wrap;
+//   #table-filter-card {
+//     flex-basis: 190px;
+//     flex-grow: 0;
+//     flex-shrink: 1;
+//     height: max-content;
+//     .filter-group-outer-wrapper {
+//       // flex-direction: column;
+//       .filter-group-item-wrapper {
+//         // flex-direction: column;
+//       }
+//     }
+//   }
+//   #table-card {
+//     flex-grow: 1;
+//     flex-basis: 1140px;
+//     flex-shrink: 0;
+//   }
+// }
+
+// @media only screen and (max-width: 1460px) {
+//   #table-filter-card {
+//     flex-grow: 1 !important;
+//   }
+// }
+// @media only screen and (min-width: 1460px) {
+//   .divider {
+//     display: none !important;
+//   }
+// }

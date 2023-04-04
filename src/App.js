@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import "./assets/global.css";
+import DashboardEmailBuilder from "./pages/DashboardEmailBuilder";
+import BorrowerView from "./views/BorrowerView/BorrowerView";
+const App = () => {
+  return <BorrowerView />;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/*" element={<Dashboard />} />
+      {/* <Route path="/email-builder" element={<DashboardEmailBuilder />} /> */}
+      {/* <Route path="/fundraising" element={<DashboardEmailBuilder />} /> */}
+      {/* <Route path="/email-builder" element={<DashboardEmailBuilder />} /> */}
+    </Routes>
   );
-}
+};
 
 export default App;

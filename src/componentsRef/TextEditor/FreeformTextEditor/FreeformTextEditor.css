@@ -1,0 +1,193 @@
+.freeform-text-editor {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #878a8c34;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .freeform-editor-submit-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .freeform-editor-submit-button-wrapper .unsaved-changes {
+  color: #a28401;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .freeform-editor-submit-button-wrapper #save-button {
+  padding: 3px 14px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .save-status-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -35px;
+  background-color: #e9eef3ba;
+  padding: 3px 11px;
+  z-index: 111111111111111;
+  -webkit-box-shadow: 0px 1px 2px 1px #254d6e38;
+          box-shadow: 0px 1px 2px 1px #254d6e38;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .save-status-container.status-error {
+  background-color: #ff00001a;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .save-status-container.active {
+  -webkit-animation: fadeOut 2s linear forwards;
+          animation: fadeOut 2s linear forwards;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .save-status-container .loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .save-status-container span {
+  margin-right: 6px;
+  font-size: 0.7rem;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .auto-save-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .auto-save-container .MuiFormControlLabel-root {
+  margin-left: 0;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .auto-save-container span {
+  font-size: inherit !important;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .auto-save-container span.status {
+  padding-left: 4px;
+  font-weight: bold;
+}
+
+.freeform-text-editor footer.text-editor__sub-toolbar .MuiTypography-root {
+  font-size: 0.7rem;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper {
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+  z-index: 11;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper .message-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper .DraftEditor-root {
+  height: 100%;
+  font-size: 0.7rem;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper .DraftEditor-root span {
+  line-height: 1.4rem;
+  font-size: inherit;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper .DraftEditor-root .DraftEditor-editorContainer {
+  height: 100%;
+}
+
+.freeform-text-editor .freeform-text-editor__overflow-wrapper .overflow-inner-wrapper .DraftEditor-root .DraftEditor-editorContainer .notranslate.public-DraftEditor-content {
+  height: 100%;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=FreeformTextEditor.css.map */

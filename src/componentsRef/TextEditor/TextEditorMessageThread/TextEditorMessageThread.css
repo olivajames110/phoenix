@@ -1,0 +1,15 @@
+.message-item-container {
+  position: relative;
+  z-index: 1111111111111;
+  background: #1534502b;
+}
+
+.message-item-container .replies-container {
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+.message-item-container .replies-container .message-item-container {
+  border-left: 3px solid var(--blue);
+}
+/*# sourceMappingURL=TextEditorMessageThread.css.map */

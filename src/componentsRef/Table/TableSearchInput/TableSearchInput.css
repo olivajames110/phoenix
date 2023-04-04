@@ -1,0 +1,48 @@
+.table-search-wrapper {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.table-search-wrapper .currently-showing {
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.table-search-wrapper .MuiOutlinedInput-root {
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid #cdced3 !important;
+  padding: 0px 14px !important;
+  background: #ffffff !important;
+}
+
+.table-search-wrapper .MuiOutlinedInput-root svg {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.8;
+}
+
+.table-search-wrapper fieldset {
+  display: none;
+}
+
+.table-search-wrapper #table-search {
+  padding: 10.5px 0 !important;
+}
+/*# sourceMappingURL=TableSearchInput.css.map */

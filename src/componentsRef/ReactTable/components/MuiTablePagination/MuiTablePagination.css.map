@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,6BAA6B,CAAC;EAC5B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,QAAQ;CAY1B;;AAfD,AAQE,6BAR2B,CAQ3B,uBAAuB,CAAC;EACtB,SAAS,EAAE,OAAO;EAClB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "MuiTablePagination.scss"
+    ],
+    "names": [],
+    "file": "MuiTablePagination.css"
+}

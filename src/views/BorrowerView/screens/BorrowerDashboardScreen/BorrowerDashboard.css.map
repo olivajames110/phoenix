@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAA,WAAW,CAAC;EAChB,OAAO,EAAE,CAAC;CAmBX;;AAED,AAAA,mBAAmB,CAAC;EAClB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,EAAE;CAqBZ;;AAvBD,AAIE,mBAJiB,CAIjB,4BAA4B,CAAC;EAC3B,UAAU,EAAE,gBAAgB;CAC7B;;AANH,AAWM,mBAXa,CAOjB,iBAAiB,CAGf,gBAAgB,CACd,EAAE,CAAC;EAED,KAAK,EAAE,WAAW;EAGlB,WAAW,EAAE,GAAG;EAEhB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "BorrowerDashboard.scss"
+    ],
+    "names": [],
+    "file": "BorrowerDashboard.css"
+}

@@ -1,0 +1,14 @@
+.render-count {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-style: normal;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #eee;
+  z-index: 111;
+}

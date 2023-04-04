@@ -1,0 +1,13 @@
+.drilldown-tab {
+  position: relative;
+  // padding: 0 16px;
+  padding: 0 16px 16px;
+  height: 100%;
+  .drilldown-tab__title {
+    // padding: 0 16px;
+  }
+  .drilldown-tab__body {
+    height: 100%;
+    // padding: 15px;
+  }
+}

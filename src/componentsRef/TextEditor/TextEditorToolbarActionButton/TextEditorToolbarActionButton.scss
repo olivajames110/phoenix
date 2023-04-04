@@ -1,0 +1,40 @@
+.text-editor-toolbar-button {
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 180ms;
+  // height: 20px;
+  // width: 20px;
+  &#add-content {
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  span {
+    color: #878a8c;
+    font-size: 0.7rem;
+    padding: 0 2px;
+  }
+  svg {
+    height: 20px;
+    width: 20px;
+    color: #878a8c;
+  }
+
+  &:hover {
+    background-color: #878a8c34;
+  }
+
+  &.submit-button {
+    padding: 4px 8px;
+    background-color: var(--blueButton);
+    width: auto;
+    // width: 100px;
+    font-weight: normal;
+    font-size: 0.7rem;
+    color: #ffffff;
+    &:hover {
+      background-color: var(--blueHover);
+    }
+  }
+}

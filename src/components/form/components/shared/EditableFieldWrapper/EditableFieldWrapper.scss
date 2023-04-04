@@ -1,0 +1,229 @@
+.editable-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: inherit;
+  // width: 100%;
+
+  font-size: 0.7rem;
+  .MuiSvgIcon-root {
+    margin-left: 0px;
+  }
+  .MuiFilledInput-root {
+    padding-left: 0;
+    // padding-left: 4px;
+    .MuiInputAdornment-root {
+      margin-top: 0 !important;
+      margin-right: -4px !important;
+
+      font-size: 0.7rem;
+      line-height: 1rem;
+      p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+      }
+    }
+  }
+  .Mui-disabled {
+    background-color: #81818121;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.806) !important;
+  }
+
+  &.display-value {
+    .editable-field__value {
+      font-weight: bold;
+    }
+  }
+
+  &#editable-radio-field {
+    .MuiTypography-root {
+      font-size: 0.7rem !important;
+    }
+    .MuiButtonBase-root-MuiRadio-root {
+      padding: 6px 8px !important;
+    }
+  }
+
+  &.unsaved {
+    .editable-field__value {
+      position: relative;
+      // &:after {
+      //   content: "";
+      //   border-radius: 4px;
+      //   position: absolute;
+      //   top: 0;
+      //   left: -4px;
+      //   width: 2px;
+      //   background-color: var(--blue);
+      //   /* padding: 0px 4px 6px; */
+      //   height: 100%;
+      //   z-index: 1;
+      //   // background-color: #1c456a14;
+      // }
+      .MuiFilledInput-root {
+        position: relative;
+        z-index: 111;
+        // border-top-right-radius: 0px;
+        // border-bottom-right-radius: 0px;
+        // padding-right: 20px;
+        border: 2px solid var(--green);
+      }
+    }
+  }
+
+  &#date-picker {
+    &.slim {
+      .editable-field__value {
+        width: 100px;
+        .MuiInputAdornment-root {
+          margin-left: -5px;
+          .MuiButtonBase-root {
+            padding: 0;
+          }
+        }
+      }
+      .MuiFilledInput-root {
+        background-color: transparent !important;
+        border: none;
+        padding-right: 16px;
+        .MuiFilledInput-input {
+          // padding: 0px !important;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          font-weight: bold !important;
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+
+  // &.slim {
+  //   &.vertical {
+  //     .MuiFilledInput-input {
+  //       padding-top: 0 !important;
+  //       padding-bottom: 0 !important;
+  //       padding-left: 0 !important;
+  //     }
+  //   }
+  //   .editable-field__value {
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  //   .MuiFilledInput-root {
+  //     background-color: transparent !important;
+  //     border: none;
+  //     padding-right: 16px;
+  //     .MuiFilledInput-input {
+  //       // padding: 0px !important;
+  //       // padding-top: 0 !important;
+  //       // padding-bottom: 0 !important;
+  //       font-weight: bold !important;
+  //       border-radius: 0 !important;
+  //     }
+  //   }
+  // }
+
+  &.select {
+    .MuiFilledInput-input {
+      padding: 3px 4px !important;
+    }
+  }
+
+  .MuiIconButton-root {
+    svg {
+      width: 1.1em !important;
+      height: 1.1em !important;
+    }
+  }
+
+  input {
+    width: 100%;
+    // transition: 50ms;
+    padding: 0 !important;
+  }
+
+  span {
+    font-size: 0.7rem;
+  }
+  .editable-field__label {
+    position: relative;
+    opacity: 0.95;
+    font-weight: normal;
+    // white-space: nowrap;
+  }
+  .editable-field__value {
+    font-weight: 500;
+    margin-left: 3px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &.calculation {
+      background-color: #2356851c;
+      // padding: 4px;
+      font-size: 0.7rem;
+      border: 1px solid hsl(0, 0%, 80%);
+      border-radius: 4px;
+      height: 25px;
+      .MuiInputAdornment-root {
+        margin-left: 4px;
+      }
+    }
+    .MuiFilledInput-root {
+      border-width: 0px;
+      width: 100%;
+
+      .MuiFilledInput-input {
+        // padding-left: 4px;
+        font-size: 0.7rem;
+        // font-size: 0.7rem;
+        padding: 4px;
+        font-weight: 600;
+      }
+    }
+
+    .MuiInputLabel-root {
+      display: none;
+    }
+  }
+
+  &.vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    .editable-field__value {
+      margin-left: 0px;
+    }
+  }
+  &.fixed-value {
+    background-color: gray;
+  }
+  &.editing {
+    border: none;
+    input {
+      padding: 4px !important;
+    }
+    .MuiFilledInput-root {
+      border-width: 1px;
+
+      .MuiFilledInput-input {
+        font-weight: 500;
+      }
+    }
+  }
+  .MuiFilledInput-root::after {
+    border-radius: 0px !important;
+    bottom: -1px;
+  }
+  .MuiFilledInput-root::before {
+    border-radius: 0px !important;
+    bottom: -1px;
+  }
+  .MuiInputBase-root-MuiFilledInput-root::after {
+    border-radius: 0px !important;
+    bottom: -1px;
+  }
+  .MuiInputBase-root-MuiFilledInput-root::before {
+    border-radius: 0px !important;
+    bottom: -1px;
+  }
+}

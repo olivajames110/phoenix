@@ -1,0 +1,28 @@
+#borrower.user-view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  header {
+    flex-grow: 0;
+  }
+
+  #dashboard-group {
+    padding: 0;
+  }
+  .nav-link-group {
+    span.MuiTypography-root {
+      font-size: 0.7rem !important;
+    }
+  }
+  .nav-link-item {
+    &.active {
+      border-right: 3px solid #90afcd;
+      border-radius: 0px;
+    }
+  }
+}
+
+.backdrop {
+  background-color: rgba(9, 30, 66, 0.54);
+}

@@ -1,0 +1,128 @@
+.table-filter-outer-wrapper {
+  padding: 10px 10px 0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.table-filter-outer-wrapper .title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #235685;
+  padding: 5px;
+}
+
+.table-filter-outer-wrapper button.clear-filters {
+  color: #235685;
+  padding: 0;
+  text-decoration: underline;
+  float: right;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.table-filter-outer-wrapper .filter {
+  margin-bottom: 5px;
+}
+
+.table-filter-outer-wrapper .filter .filter-group-outer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.table-filter-outer-wrapper .filter .filter-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group__title .table-filter-toggle {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5px;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group__title .table-filter-toggle svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group-item-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group-item-wrapper .filter-group__item {
+  -ms-flex-preferred-size: 180px;
+      flex-basis: 180px;
+  position: relative;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .filter-group-item-wrapper .filter-group__item .MuiFilledInput-root {
+  border: none !important;
+}
+
+.table-filter-outer-wrapper .filter .filter-group .divider {
+  width: 2px;
+  background-color: rgba(128, 128, 128, 0.137);
+  height: 20px;
+}
+
+.table-filter-outer-wrapper section.table-section {
+  position: relative;
+}
+
+.table-filter-outer-wrapper section.table-section h2.table-title {
+  font-family: var(--mont);
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #235685;
+}
+
+.table-filter-outer-wrapper section.table-section .global-search-wrapper {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=TableFilters.css.map */

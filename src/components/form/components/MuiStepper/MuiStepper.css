@@ -1,0 +1,60 @@
+#form-stepper.MuiStepper-root {
+  position: relative;
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+#form-stepper.MuiStepper-root .MuiStepIcon-text {
+  font-size: 12px;
+}
+
+#form-stepper.MuiStepper-root .MuiStepLabel-label.Mui-active {
+  color: #1c456a;
+  font-weight: 600;
+}
+
+#form-stepper.MuiStepper-root .MuiStepLabel-label.Mui-completed {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#form-stepper.MuiStepper-root svg.MuiSvgIcon-root {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#form-stepper.MuiStepper-root .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  font-size: 0.7rem;
+  margin-top: 6px;
+}
+
+#form-stepper.MuiStepper-root.extended {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#form-stepper.MuiStepper-root.normal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form-stepper.MuiStepper-root.normal .stepper-inner-wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+
+#form-stepper.MuiStepper-root.alternate .MuiStepLabel-iconContainer.MuiStepLabel-alternativeLabel {
+  margin-top: 0px;
+}
+
+#form-stepper.MuiStepper-root.alternate svg.MuiSvgIcon-root {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+/*# sourceMappingURL=MuiStepper.css.map */

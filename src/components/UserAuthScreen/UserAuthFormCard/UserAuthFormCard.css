@@ -1,0 +1,205 @@
+article#user-auth-form-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  width: 100%;
+}
+
+article#user-auth-form-card button.return-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  border-radius: 50px;
+  background-color: #e1e1e1;
+}
+
+article#user-auth-form-card button.return-button svg {
+  color: #676767;
+  width: 68%;
+  height: 68%;
+}
+
+article#user-auth-form-card .form-outer-wrapper {
+  position: relative;
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-box-shadow: 0px 2px 4px 1px #0000001c;
+          box-shadow: 0px 2px 4px 1px #0000001c;
+  width: 100%;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 480px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__header {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__header .form-header-title-container {
+  position: relative;
+  padding-top: 25px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__header .form-header-title-container h1 {
+  font-family: var(--jost);
+  color: #3a3a3a;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__header .form-header-title-container p {
+  text-align: center;
+  color: #707070;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__header .form-header-title-container p span {
+  font-weight: bold;
+}
+
+article#user-auth-form-card .form-outer-wrapper .alt-login-button {
+  padding: 5px;
+  -webkit-transition: inherit;
+  transition: inherit;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+article#user-auth-form-card .form-outer-wrapper .alt-login-button:hover {
+  background-color: #ffffff !important;
+  text-decoration: underline;
+  color: #3d3d3d;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body .alt-login-container {
+  position: relative;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body .alt-login-container .alt-login-divider {
+  border-top: 1px solid #cecece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 10px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body .alt-login-container .alt-login-divider .label {
+  background-color: white;
+  padding: 0 12px;
+  height: 30px;
+  font-size: 0.75rem;
+  position: absolute;
+  color: #7f7c7c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body .alt-login-container .alt-login-buttons-container #magic-link {
+  max-width: 210px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__body .alt-login-container .alt-login-buttons-container #magic-link .icon-wrapper {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__buttons .reset-buttons-container {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__buttons .reset-buttons-container .MuiTypography-root {
+  font-size: 12.8px;
+  line-height: 12px;
+  margin-left: -5px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__buttons #submit {
+  background-color: #235685;
+  width: 100%;
+  font-size: 15px;
+  padding: 18px;
+  color: #ffffff;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__buttons .existing-user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .form__buttons .existing-user-container button {
+  margin-left: -5px;
+}
+
+article#user-auth-form-card .form-outer-wrapper .underline-ghost-button {
+  background-color: transparent;
+  color: #235685;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=UserAuthFormCard.css.map */

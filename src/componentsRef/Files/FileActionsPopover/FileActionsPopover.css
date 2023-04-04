@@ -1,0 +1,38 @@
+.file-action-popover-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.file-action-popover-container button.popover-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.file-action-popover-container button.popover-button#direct-download {
+  margin-top: 3px;
+}
+
+.file-action-popover-container button.popover-button svg {
+  fill: var(--blue);
+  height: 16px;
+  width: 16px !important;
+}
+
+.file-name-value#new {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=FileActionsPopover.css.map */
