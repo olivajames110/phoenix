@@ -13,12 +13,12 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { useStytch } from "@stytch/react";
+
 import React from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import SubmitInvoiceFormModal from "../../../forms/SubmitInvoice/SubmitInvoiceFormModal";
+
 import { useReduxHook } from "../../../redux/helpers/useReduxHook";
 
 import "./UserProfileButton.css";
@@ -29,7 +29,7 @@ const UserProfileButton = (props) => {
   const user = useSelector((state) => state.user);
   // const { user } = useStytchUser();
   const navigate = useNavigate();
-  const stytch = useStytch();
+
   const handleLogout = () => {
     // stytch.session.revoke();
     handleLogoutUser();
@@ -147,10 +147,6 @@ const UserProfileButton = (props) => {
 
   return (
     <>
-      <SubmitInvoiceFormModal
-        show={showInvoice}
-        onCancel={() => setShowInvoice(false)}
-      />
       <Box
         sx={{
           borderLeft: "1px solid  #ffffff61",

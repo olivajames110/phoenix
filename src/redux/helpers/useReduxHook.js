@@ -12,13 +12,11 @@ import { logOutUser } from "../actions/isLoggedInActions";
 import { clearStyles } from "../actions/stylesActions";
 import { clearUserState } from "../actions/userActions";
 import { clearUserType } from "../actions/userTypeActions";
-import { useStytch } from "@stytch/react";
 
 export const useReduxHook = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const userType = useSelector((state) => state.userType);
-  const stytch = useStytch();
 
   const handleLogoutUser = () => {
     console.log("LOGOUT");
@@ -37,7 +35,6 @@ export const useReduxHook = () => {
     dispatch(clearUserState());
     dispatch(logOutUser());
     navigate("/login");
-    stytch.session.revoke();
   };
 
   const handleCheckIfEmployee = (passedUserType) => {

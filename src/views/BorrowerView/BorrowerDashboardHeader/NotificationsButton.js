@@ -27,7 +27,7 @@ const NotificationsButton = (props) => {
 
   return (
     <>
-      <Badge badgeContent={4} color="error">
+      <Badge badgeContent={4} color="secondary">
         <IconButton
           onClick={handleClick}
           size="small"

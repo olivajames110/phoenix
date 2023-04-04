@@ -1,10 +1,9 @@
+import { ExpandLessRounded, ExpandMoreRounded } from "@mui/icons-material";
 import { Box, IconButton } from "@mui/material";
 import React, { useState } from "react";
 import VerticalNavLeftColumn from "../../../components/layout/VerticalNavLayout/VerticalNavLeftColumn";
-import NavLogo from "../../../components/navigation/NavLogo";
-import FlatIronLogo from "../../../components/shared/FlatIronLogo";
 import BorrowerVerticalNavigationLinks from "./BorrowerVerticalNavigationLinks";
-import { ExpandLessRounded, ExpandMoreRounded } from "@mui/icons-material";
+import FlatIronLogo from "../../../components/shared/FlatIronLogo";
 
 const BorrowerVerticalNavigation = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -16,11 +15,11 @@ const BorrowerVerticalNavigation = (props) => {
           margin: "20px 14px",
           display: "flex",
           alignItems: "center",
-          justifyContent: "flex-start",
+          justifyContent: "center",
           gap: "3px",
         }}
       >
-        <FlatIronLogo width={"135px"} color={"#1C456A"} />
+        <FlatIronLogo width={"65px"} color={"#1C456A"} />
         <IconButton
           onClick={() => setIsCollapsed((s) => !s)}
           sx={{ padding: "5px" }}

@@ -1,7 +1,6 @@
 import { ChevronLeft } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 import React from "react";
-import FlatIronLogo from "../../shared/FlatIronLogo";
 
 import "./UserAuthFormCard.css";
 
@@ -24,7 +23,7 @@ const UserAuthFormCard = (props) => {
               </button>
             </Tooltip>
           ) : null}
-          <FlatIronLogo />
+
           <div className="form-header-title-container">
             {props.title ? <h1>{props.title}</h1> : null}
             {props.description ? <p>{props.description}</p> : null}

@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { usePlaidLink } from "react-plaid-link";
 
 import { Box, Stack } from "@mui/material";
 
 import MuiGrid from "../../../../components/shared/MuiGrid";
 import GridItem from "../../../../components/shared/MuiGrid/GridItem";
-import BorrowerCreditAuthModal from "../../../../forms/BorrowerCreditAuth/BorrowerCreditAuthModal";
-import BorrowerLoanApplicationModal from "../../../../forms/BorrowerLoanApplication/BorrowerLoanApplicationModal";
 
 import SubmittedLoanApplicationWidget from "./borrowerDashboardWidgets/SubmittedLoanApplicationWidget";
 
@@ -24,7 +21,6 @@ import {
 } from "./borrowerDashboardWidgets";
 import {
   ActiveLoans,
-  BankAccount,
   BorrowerProfile,
   CreditAuthStatus,
   MoneyBorrowed,
@@ -49,33 +45,23 @@ const BorrowerDashboardScreen = (props) => {
         />
         {/* <MessagesWidget /> */}
       </Box>
-
-      <BorrowerCreditAuthModal
-        setCreditAuthModalIsActive={setCreditAuthModalIsActive}
-        show={creditAuthModalIsActive}
-        onCancel={() => setCreditAuthModalIsActive(false)}
-      />
-      <BorrowerLoanApplicationModal
-        show={loanAppModalIsActive}
-        onCancel={() => setLoanAppModalIsActive(false)}
-      />
     </>
   );
 };
 
 const DashboardBody = ({ handleLoanAppClick, handleCreditAuthClick }) => {
   const [token, setToken] = useState(null);
-  const { open, ready } = usePlaidLink({
-    token: token,
-    env: "sandbox",
-    onSuccess: (public_token, metadata) => {
-      console.log("Success");
-    },
-  });
+  // const { open, ready } = usePlaidLink({
+  //   token: token,
+  //   env: "sandbox",
+  //   onSuccess: (public_token, metadata) => {
+  //     console.log("Success");
+  //   },
+  // });
 
   const handleLinkAccount = (event) => {
     console.log("Link");
-    open();
+    // open();
   };
 
   React.useEffect(() => {
@@ -104,7 +90,7 @@ const DashboardBody = ({ handleLoanAppClick, handleCreditAuthClick }) => {
         <CreditAuthStatus onClick={handleCreditAuthClick} />
       </GridItem>
       <GridItem size={12 / 5}>
-        <BankAccount ready={ready} onClick={handleLinkAccount} />
+        {/* <BankAccount ready={ready} onClick={handleLinkAccount} /> */}
       </GridItem>
     </MuiGrid>
   );

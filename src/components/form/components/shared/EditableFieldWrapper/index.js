@@ -1,19 +1,7 @@
-import { AttachMoney, Close, Save } from "@mui/icons-material";
-import { InputAdornment, Tooltip } from "@mui/material";
-import React, { useState } from "react";
-import { useForm, useFormState } from "react-final-form";
-import { useDispatch, useSelector } from "react-redux";
-import { parseBracketToDotNotation } from "../../../../../forms/helpers/parseBracketToDotNotation";
-import { apiEndpoints } from "../../../../../global/api/apiEndpoints";
-import { getObjectValueFromStringPath } from "../../../../../helpers/getObjectValueFromStringPath";
-import { removeSpecialCharacters } from "../../../../../helpers/removeSpecialCharacters";
-import { usePostRequest } from "../../../../../hooks/helpers/usePostRequest";
-import {
-  setFormData,
-  updateFormData,
-} from "../../../../../redux/actions/formDataActions";
-import InputSave from "../../../../shared/InputSave/InputSave";
-import SnackbarAlert from "../../../../shared/SnackbarAlert/SnackbarAlert";
+import { AttachMoney } from "@mui/icons-material";
+import { InputAdornment } from "@mui/material";
+import React from "react";
+import { useSelector } from "react-redux";
 import "./EditableFieldWrapper.css";
 const _ = require("lodash");
 

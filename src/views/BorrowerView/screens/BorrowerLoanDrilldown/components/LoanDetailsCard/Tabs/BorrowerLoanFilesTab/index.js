@@ -8,9 +8,6 @@ import PreviewableFileTable from "../../../../../../../../components/shared/File
 import FlatironDisplayTable from "../../../../../../../../components/shared/FlatironDisplayTable";
 import MuiGrid from "../../../../../../../../components/shared/MuiGrid";
 import GridItem from "../../../../../../../../components/shared/MuiGrid/GridItem";
-import WidgetOuterTitle from "../../../../../../../../components/shared/Widgets/WidgetOuterTitle";
-import BorrowerFileActionRequiredModal from "../../../../../../../../forms/BorrowerFileActionRequired/BorrowerFileActionRequiredModal";
-import { fileDocumentSchema } from "../../../../../../../../forms/_formQuestions/_formSchema/fileDocumentSchema";
 import { BORROWER_DUMMY_DOCS } from "../../../../../../tests/BORROWER_DUMMY_DOCS";
 import LoanFilesStatusKey from "./LoanFilesStatusKey";
 
@@ -59,11 +56,6 @@ const BorrowerLoanFilesTab = (props) => {
   const columns = React.useMemo(() => cols, []);
   return (
     <DrilldownScreenTab title={"Files"}>
-      <BorrowerFileActionRequiredModal
-        file={actionRequiredIsActive}
-        show={actionRequiredIsActive !== null}
-        onCancel={() => setActionRequiredIsActive(null)}
-      />
       <MuiGrid spacing={4}>
         <GridItem size={8}>
           <DrilldownCardTabSection
