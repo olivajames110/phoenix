@@ -6,10 +6,15 @@ import {
   HelpOutline,
   HomeOutlined,
   HomeRounded,
+  MailOutline,
   MonetizationOnOutlined,
   PersonOutline,
   PersonSearchOutlined,
+  PetsOutlined,
+  QueryStats,
+  ReviewsOutlined,
   SettingsOutlined,
+  ShareOutlined,
 } from "@mui/icons-material";
 import { Box, Divider, List, ListItem } from "@mui/material";
 import { Stack } from "@mui/system";
@@ -26,24 +31,34 @@ const BorrowerVerticalNavigationLinks = ({ isCollapsed }) => {
       icon: <HomeOutlined />,
     },
     {
-      label: "Loan Applications",
-      path: "/loan-applications",
+      label: "Fundraising",
+      path: "/fundraising",
       icon: <MonetizationOnOutlined />,
     },
     {
-      label: "Credit Authorizations",
-      path: "/credit-authorizations",
-      icon: <PersonSearchOutlined />,
+      label: "Pets",
+      path: "/pets",
+      icon: <PetsOutlined />,
     },
     {
-      label: "File Manager",
-      path: "/file-manager",
-      icon: <FileUploadOutlined />,
+      label: "Social Media",
+      path: "/social-media",
+      icon: <ShareOutlined />,
     },
     {
-      label: "Scenarios",
-      path: "/scenarios",
-      icon: <AssessmentOutlined />,
+      label: "Reviews",
+      path: "/reviews",
+      icon: <ReviewsOutlined />,
+    },
+    {
+      label: "Email Marketing",
+      path: "/email-marketing",
+      icon: <MailOutline />,
+    },
+    {
+      label: "Web Stats",
+      path: "/web-stats",
+      icon: <QueryStats />,
     },
   ];
 

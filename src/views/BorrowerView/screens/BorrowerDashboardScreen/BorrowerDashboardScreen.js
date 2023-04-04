@@ -122,7 +122,7 @@ const DashboardBody = ({ handleLoanAppClick, handleCreditAuthClick }) => {
                 />
               </GridItem>
             </MuiGrid>
-            <PrimaryWidget title="My Loan Applications">
+            <PrimaryWidget title="Adoption Applications">
               <SubmittedLoanApplicationWidget />
             </PrimaryWidget>
           </Stack>

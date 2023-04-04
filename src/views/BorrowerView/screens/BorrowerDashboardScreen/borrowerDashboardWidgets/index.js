@@ -17,8 +17,8 @@ import {
 export const LoanScenariosWidget = (props) => {
   return (
     <CtaWidget
-      title="Create Loan Scenario"
-      description="Analyze the value of a deal."
+      title="Fundraising"
+      description="Create and modify a fundraising campaign"
       statusLabel={"Active Loans:"}
       statusValue={"3"}
       actionButtonOnClick={props.actionButtonOnClick}
@@ -32,8 +32,8 @@ export const LoanScenariosWidget = (props) => {
 export const LoanApplicationWidget = (props) => {
   return (
     <CtaWidget
-      title="Submit Loan Application"
-      description="Get started with a loan application."
+      title="Pets"
+      description="Manage the status of your available pets"
       statusLabel={"Active Loans:"}
       statusValue={"3"}
       actionButtonOnClick={props.actionButtonOnClick}
@@ -47,8 +47,8 @@ export const LoanApplicationWidget = (props) => {
 export const CreditAuthorizationWidget = (props) => {
   return (
     <CtaWidget
-      title="Submit Credit Authorization"
-      description="Submit a credit authorization"
+      title="Online Reviews"
+      description="Monitor your online reputation"
       statusLabel={"Expires:"}
       statusValue={"3/12/23"}
       actionButtonOnClick={props.actionButtonOnClick}
