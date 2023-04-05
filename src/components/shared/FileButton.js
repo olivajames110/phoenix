@@ -2,7 +2,6 @@ import { LoadingButton } from "@mui/lab";
 import { CircularProgress, IconButton } from "@mui/material";
 import React from "react";
 import { useSelector } from "react-redux";
-import { useFilesHook } from "../../hooks/useFilesHook";
 
 const FileButton = ({
   filename,
@@ -17,7 +16,8 @@ const FileButton = ({
   underline,
   minWidth,
 }) => {
-  const { filesGetIsLoading, previewFile } = useFilesHook();
+  // const { filesGetIsLoading, previewFile } = useFilesHook();
+  const filesGetIsLoading = false;
   const formData = useSelector((state) => state.formData);
 
   const handlePreviewFile = async () => {
@@ -29,7 +29,7 @@ const FileButton = ({
     };
 
     console.log("params", getFileParams);
-    previewFile(getFileParams);
+    // previewFile(getFileParams);
   };
 
   const buttonLabel = label ? label : "View File";

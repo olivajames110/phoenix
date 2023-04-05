@@ -10,7 +10,10 @@ import NotificationsButton from "./NotificationsButton";
 const BorrowerDashboardHeader = ({ title }) => {
   const location = useLocation();
   const locationName = location.pathname;
-  const pageTitle = locationName.replace("/", "").replace("-", " ");
+  const pageTitle =
+    locationName === "/"
+      ? "Dashboard"
+      : locationName.replace("/", "").replace("-", " ");
   return (
     <>
       <AppBar sx={{ padding: "8px 0", boxShadow: "none" }} position="static">

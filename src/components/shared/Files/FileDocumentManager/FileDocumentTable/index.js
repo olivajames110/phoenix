@@ -3,7 +3,6 @@ import { usePagination, useRowSelect, useSortBy, useTable } from "react-table";
 
 // import "./ReactTable.css";
 
-import { EditableFileTableRow } from "./EditableFileTableRow";
 import SortableTableHeader from "./SortableTableHeader";
 import "./FileDocGroupTable.css";
 
@@ -37,20 +36,21 @@ export const FileDocumentTable = ({ columns, data, ...props }) => {
         >
           <SortableTableHeader headerGroups={headerGroups} />
           {/* Table Body */}
-          <tbody {...getTableBodyProps()}>
+          {/* <tbody {...getTableBodyProps()}>
             {rows.map((row, i) => {
               prepareRow(row);
               // console.log(row);
               return (
-                <EditableFileTableRow
-                  key={i}
-                  row={row}
-                  isCategorized={props.isCategorized}
-                  original={row.original}
-                />
+                's'
+                // <EditableFileTableRow
+                //   key={i}
+                //   row={row}
+                //   isCategorized={props.isCategorized}
+                //   original={row.original}
+                // />
               );
             })}
-          </tbody>
+          </tbody> */}
         </table>
       </div>
     </>
