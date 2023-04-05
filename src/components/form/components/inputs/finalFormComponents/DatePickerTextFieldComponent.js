@@ -1,4 +1,4 @@
-import { FormControl, FormHelperText, OutlinedInput } from "@mui/material";
+import { Box, FormControl, FormHelperText, OutlinedInput } from "@mui/material";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -29,45 +29,45 @@ export const DatePickerTextFieldComponent = (props) => {
 
   const { change } = useForm();
 
-  const parseDate = (string) => {
-    // console.log("date string", string);
-    if (string === undefined || string === null) {
-      return string;
-    }
-    if (dateIsValid(string)) {
-      let d = new Date(String(string));
-      return d.toISOString();
-    }
-    return string;
-  };
+  // const parseDate = (string) => {
+  //   // console.log("date string", string);
+  //   if (string === undefined || string === null) {
+  //     return string;
+  //   }
+  //   if (dateIsValid(string)) {
+  //     let d = new Date(String(string));
+  //     return d.toISOString();
+  //   }
+  //   return string;
+  // };
 
-  const isValidDate = (d) => {
-    return d instanceof Date && !isNaN(d);
-  };
-  const originalValue = parseDate(_.get(formData, props.input.name));
-  const onChangeHandler = (val) => {
-    console.log("🚀 DatePickerTextFieldComponent val", isValidDate(val));
-    if (isValidDate(val)) {
-      if (props.onChange) {
-        const originalValIsoString = parseDateStringToIsoString(originalValue);
-        const readableDateOriginal = parseISOToDate(originalValIsoString);
+  // const isValidDate = (d) => {
+  //   return d instanceof Date && !isNaN(d);
+  // };
+  // const originalValue = parseDate(_.get(formData, props.input.name));
+  // const onChangeHandler = (val) => {
+  //   console.log("🚀 DatePickerTextFieldComponent val", isValidDate(val));
+  //   if (isValidDate(val)) {
+  //     if (props.onChange) {
+  //       const originalValIsoString = parseDateStringToIsoString(originalValue);
+  //       const readableDateOriginal = parseISOToDate(originalValIsoString);
 
-        const currentValIsoString = parseDateStringToIsoString(val);
-        const readableDateCurrent = parseISOToDate(currentValIsoString);
+  //       const currentValIsoString = parseDateStringToIsoString(val);
+  //       const readableDateCurrent = parseISOToDate(currentValIsoString);
 
-        let isModified = _.isEqual(readableDateCurrent, readableDateOriginal);
-        props.onChange(props.input.name, val, isModified);
-      }
-      setValue(val);
-      change(props.input.name, val);
-    }
-  };
+  //       let isModified = _.isEqual(readableDateCurrent, readableDateOriginal);
+  //       props.onChange(props.input.name, val, isModified);
+  //     }
+  //     setValue(val);
+  //     change(props.input.name, val);
+  //   }
+  // };
 
-  useEffect(() => {
-    if (props.input.value) {
-      setValue(parseISOString(props.input.value));
-    }
-  }, [props.input]);
+  // useEffect(() => {
+  //   if (props.input.value) {
+  //     setValue(parseISOString(props.input.value));
+  //   }
+  // }, [props.input]);
   // useEffect(() => {
   //   if (props.input.value) {
   //     setValue(parseISOString(props.input.value));
@@ -75,50 +75,68 @@ export const DatePickerTextFieldComponent = (props) => {
   // }, [props.input]);
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <DatePicker
-        label={props.label}
-        value={value} //Tue Nov 30 0202 00:00:00 GMT-0456 (Eastern Standard Time)
-        // value={parseISOString(value)}
-        onChange={(newValue) => {
-          onChangeHandler(newValue);
-        }}
-        renderInput={(params) => (
-          // <TextDateFieldComponent
-          //   id="date-picker"
-          //   type="date"
-          //   editable={props.editable}
-          //   // value={value}
-          //   // formValue={getObjectValueFromStringPath(values, props.input.name)}
-          //   value={parseISOString(value)}
-          //   {...params}
-          //   {...props}
-          // />
-          <TextDateFieldComponent
-            id="date-picker"
-            type="date"
-            // editable={props.editable}
-
-            value={parseISOString(value)}
-            {...params}
-            {...props}
-          />
-        )}
-        // renderInput={(params) => (
-        //   <TextFieldComponent
-        //     id="date-picker"
-        //     editable={props.editable}
-        //     value={parseISOString(value)}
-        //     {...params}
-        //     {...props}
-        //   />
-        // )}
-        // renderInput={(params) => (
-        //   <DatePickerField value={value} {...params} {...props} />
-        // )}
-      />
-    </LocalizationProvider>
+    <Box
+      sx={{
+        ".date-picker": {
+          // background: "red",
+          width: "100%",
+          "fieldset.MuiOutlinedInput-notchedOutline": {
+            border: "none",
+          },
+        },
+      }}
+    >
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <DatePicker className="date-picker" fullWidth />
+      </LocalizationProvider>
+    </Box>
   );
+
+  // return (
+  //   <LocalizationProvider dateAdapter={AdapterDateFns}>
+  //     <DatePicker
+  //       label={props.label}
+  //       value={value} //Tue Nov 30 0202 00:00:00 GMT-0456 (Eastern Standard Time)
+  //       // value={parseISOString(value)}
+  //       onChange={(newValue) => {
+  //         onChangeHandler(newValue);
+  //       }}
+  //       renderInput={(params) => (
+  //         // <TextDateFieldComponent
+  //         //   id="date-picker"
+  //         //   type="date"
+  //         //   editable={props.editable}
+  //         //   // value={value}
+  //         //   // formValue={getObjectValueFromStringPath(values, props.input.name)}
+  //         //   value={parseISOString(value)}
+  //         //   {...params}
+  //         //   {...props}
+  //         // />
+  //         <TextDateFieldComponent
+  //           id="date-picker"
+  //           type="date"
+  //           // editable={props.editable}
+
+  //           value={parseISOString(value)}
+  //           {...params}
+  //           {...props}
+  //         />
+  //       )}
+  //       // renderInput={(params) => (
+  //       //   <TextFieldComponent
+  //       //     id="date-picker"
+  //       //     editable={props.editable}
+  //       //     value={parseISOString(value)}
+  //       //     {...params}
+  //       //     {...props}
+  //       //   />
+  //       // )}
+  //       // renderInput={(params) => (
+  //       //   <DatePickerField value={value} {...params} {...props} />
+  //       // )}
+  //     />
+  //   </LocalizationProvider>
+  // );
 };
 
 const DatePickerField = (props) => {

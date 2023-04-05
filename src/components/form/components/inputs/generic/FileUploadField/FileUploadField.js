@@ -6,7 +6,6 @@ import { getObjectValueFromStringPath } from "../../../../../../helpers/getObjec
 import { VALIDATOR_REQUIRE } from "../../../../../../helpers/validators/inputValidators";
 import FormField from "../../../shared/FormField/FormField";
 import FileUpload from "./FileUpload";
-import FileUploadSelectedFiles from "./FileUploadSelectedFiles";
 
 const _ = require("lodash");
 const FileUploadField = (props) => {
@@ -73,12 +72,12 @@ const FileUploadField = (props) => {
         // onUpdate={onDocumentUpdate}
         {...props}
       />
-      {selectedFiles.length >= 1 && (
+      {/* {selectedFiles.length >= 1 && (
         <FileUploadSelectedFiles
           onDelete={handleClearFile}
           selectedFiles={selectedFiles}
         />
-      )}
+      )} */}
       {props.isRequired && submitFailed && selectedFiles?.length === 0 && (
         <span className="error">Required</span>
       )}
