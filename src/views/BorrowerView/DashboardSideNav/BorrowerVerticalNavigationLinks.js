@@ -1,15 +1,9 @@
 import {
   AccountCircleOutlined,
-  AssessmentOutlined,
-  BarChartOutlined,
-  FileUploadOutlined,
   HelpOutline,
   HomeOutlined,
-  HomeRounded,
   MailOutline,
   MonetizationOnOutlined,
-  PersonOutline,
-  PersonSearchOutlined,
   PetsOutlined,
   QueryStats,
   ReviewsOutlined,
@@ -20,8 +14,6 @@ import { Box, Divider, List, ListItem } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
 import NavLink from "../../../components/navigation/NavLink";
-
-import NavLinkGroup from "../../../components/navigation/NavLinkGroup";
 
 const BorrowerVerticalNavigationLinks = ({ isCollapsed }) => {
   const borrowerRoutesProfile = [

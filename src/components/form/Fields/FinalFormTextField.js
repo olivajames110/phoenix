@@ -1,16 +1,9 @@
 import { FormControl, FormHelperText, TextField } from "@mui/material";
 import { get, isNil } from "lodash";
-import React from "react";
-import { useState } from "react";
-import { Field, useFormState } from "react-final-form";
+import React, { useState } from "react";
+import { Field } from "react-final-form";
 import { NumericFormat } from "react-number-format";
 import { useDispatch, useSelector } from "react-redux";
-import { parseBracketToDotNotation } from "../../../forms/helpers/parseBracketToDotNotation";
-import { getObjectValueFromStringPath } from "../../../helpers/getObjectValueFromStringPath";
-import {
-  addFormDataUpdate,
-  removeFormDataUpdate,
-} from "../../../redux/actions/formDataUpdatedActions";
 import RenderCount from "../components/RenderCount/RenderCount";
 import FormField from "../components/shared/FormField/FormField";
 

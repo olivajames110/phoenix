@@ -1,7 +1,7 @@
 import React from "react";
 import RenderCount from "../components/RenderCount/RenderCount";
 // import "./FormResults.css";
-import ReactJson from "react-json-view";
+// import ReactJson from "react-json-view";
 const FormResults = (props) => {
   // return <ReactJson src={props.values} />;
   return (
@@ -19,7 +19,7 @@ const FormResults = (props) => {
     >
       {props.rendercount ? <RenderCount /> : null}
 
-      {props.formSpyRaw ? (
+      {/* {props.formSpyRaw ? (
         JSON.stringify(props.values, undefined, 2)
       ) : (
         <ReactJson
@@ -35,7 +35,7 @@ const FormResults = (props) => {
               : 30
           }
         />
-      )}
+      )} */}
     </pre>
   );
 };

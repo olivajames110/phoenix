@@ -5,7 +5,7 @@ import VerticalNavLeftColumn from "../../../components/layout/VerticalNavLayout/
 import BorrowerVerticalNavigationLinks from "./BorrowerVerticalNavigationLinks";
 import FlatIronLogo from "../../../components/shared/FlatIronLogo";
 
-const BorrowerVerticalNavigation = (props) => {
+const DashboardSideNav = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -36,4 +36,4 @@ const BorrowerVerticalNavigation = (props) => {
   );
 };
 
-export default BorrowerVerticalNavigation;
+export default DashboardSideNav;

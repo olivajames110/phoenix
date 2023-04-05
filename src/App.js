@@ -9,6 +9,8 @@ import { useSelector } from "react-redux";
 
 import { globalAlertClose } from "./redux/actions/globalAlertActions";
 import BorrowerView from "./views/BorrowerView/BorrowerView";
+import UserView from "./components/layout/UserView";
+import VerticalNavLayout from "./components/layout/VerticalNavLayout";
 
 const App = () => {
   const globalAlert = useSelector((state) => state.globalAlert);
@@ -21,7 +23,11 @@ const App = () => {
   return (
     <ThemeProvider theme={inputTheme}>
       {/* <PortalWorkspace /> */}
-      <BorrowerView />
+      <UserView id="borrower">
+        <VerticalNavLayout>
+          <BorrowerView />
+        </VerticalNavLayout>
+      </UserView>
       {/* <SnackbarAlert
         open={globalAlert.show}
         autoHideDuration={4000}
