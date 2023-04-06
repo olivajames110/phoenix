@@ -105,7 +105,8 @@ export const TextDateFieldComponent = (props) => {
           variant="filled"
         >
           <TextField
-            fullWidth={props.fullWidth ? props.fullWidth : true}
+            // fullWidth={props.fullWidth ? props.fullWidth : true}
+            fullWidth
             onChange={handleDefaultInputChange}
             id={name}
             placeholder={props.placeholder}
@@ -115,7 +116,7 @@ export const TextDateFieldComponent = (props) => {
             error={meta.error && meta.touched}
             label={label}
             size="small"
-            variant="filled"
+            variant="outlined"
           />
 
           {helperText && <FormHelperText>{helperText}</FormHelperText>}

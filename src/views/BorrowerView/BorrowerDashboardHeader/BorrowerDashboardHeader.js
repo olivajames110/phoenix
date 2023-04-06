@@ -13,7 +13,7 @@ const BorrowerDashboardHeader = ({ title }) => {
   const pageTitle =
     locationName === "/"
       ? "Dashboard"
-      : locationName.replace("/", "").replace("-", " ");
+      : locationName.replace("/", "").replace("-", " ").replace("/", " > ");
   return (
     <>
       <AppBar sx={{ padding: "8px 0", boxShadow: "none" }} position="static">

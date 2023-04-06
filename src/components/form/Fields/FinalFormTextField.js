@@ -106,7 +106,7 @@ const FinalFormTextField = ({
             fullWidth={fullWidth ? fullWidth : true}
             variant="filled"
           >
-            <RenderCount />
+            {/* <RenderCount /> */}
             {count ? <RenderCount /> : null}
             {/* {console.log(input.value)} */}
             <TextField

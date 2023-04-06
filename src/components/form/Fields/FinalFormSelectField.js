@@ -53,8 +53,8 @@ const FinalFormSelectField = ({
                 {isRequired && "*"}
               </InputLabel>
             )}
-            {count ? <RenderCount /> : null}
-            <RenderCount />
+            {/* {count ? <RenderCount /> : null} */}
+            {/* <RenderCount /> */}
             <Select
               error={meta.error && meta.touched}
               size="small"

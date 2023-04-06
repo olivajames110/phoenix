@@ -1,16 +1,12 @@
-import { FormHelperText } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useDropzone } from "react-dropzone";
 import { useForm, useFormState } from "react-final-form";
 import { v4 as uuidv4 } from "uuid";
-import { fileDocumentSchema } from "../../../../../../forms/_formQuestions/_formSchema/fileDocumentSchema";
-import { getObjectValueFromStringPath } from "../../../../../../helpers/getObjectValueFromStringPath";
 import { getTodaysDate } from "../../../../../../helpers/getTodaysDate";
 
 import Loader from "../../../../../shared/Loader/Loader";
 
 import "./FileUpload.css";
-import FileUploadSelectedFiles from "./FileUploadSelectedFiles";
 
 export const FileUpload = ({ required, input, dropZoneProps, ...props }) => {
   // const [previewUrl, setPreviewUrl] = useState("");
@@ -39,16 +35,7 @@ export const FileUpload = ({ required, input, dropZoneProps, ...props }) => {
           }),
           id: uid,
           name: input.name,
-          docGroup:
-            props.docGroup === undefined
-              ? fileDocumentSchema.noCategory.name
-              : props.docGroup,
-          docType:
-            props.docType === undefined
-              ? fileDocumentSchema.noCategory.name
-              : props.docType,
-          // docGroup: props.docGroup === undefined ? input.name : props.docGroup,
-          // docType: props.docType ? props.docType : "unknown",
+
           dateSubmitted: getTodaysDate(),
         };
         newFileIds = [...newFileIds, newObject.id];
