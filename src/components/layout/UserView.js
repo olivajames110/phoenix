@@ -5,7 +5,7 @@ const UserView = ({ sx, id, children, component }) => {
   const style = { height: "100%", background: "#f5f6fa", overflowY: "auto" };
   return (
     <Box
-      sx={{ ...style, ...sx }}
+      sx={{ width: "100%", ...style, ...sx }}
       id={id}
       component={component}
       className="user-view"

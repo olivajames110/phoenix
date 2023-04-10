@@ -1,7 +1,7 @@
 import documentsReducer from "./documentsReducer";
 import formIsValidReducer from "./formIsValidReducer";
 import isLoggedInReducer from "./isLoggedInReducer";
-import dealSubmissionsReducer from "./dealSubmissionsReducer";
+import fundraisorsReducer from "./fundraisorsReducer";
 import creditAuthorizationsReducer from "./creditAuthorizationsReducer";
 import borrowerProfileReducer from "./borrowerProfileReducer";
 import userReducer from "./userReducer";
@@ -23,7 +23,7 @@ const rootReducer = combineReducers({
   user: userReducer,
   borrowerProfile: borrowerProfileReducer,
   globalAlert: globalAlertReducer,
-  dealSubmissions: dealSubmissionsReducer,
+  fundraisors: fundraisorsReducer,
   creditAuthorizations: creditAuthorizationsReducer,
   documents: documentsReducer,
   isLoading: isLoadingReducer,

@@ -4,7 +4,7 @@ import { userTypes } from "../../global/userTypes";
 import { clearBorrowerProfileState } from "../actions/borrowerProfileActions";
 import { globalAlertReset } from "../actions/globalAlertActions";
 import { clearCreditAuthState } from "../actions/creditAuthorizationsActions";
-import { clearDealSubmissionsState } from "../actions/dealSubmissionsActions";
+import { clearDealSubmissionsState } from "../actions/fundraisorsActions";
 import { clearDocuments } from "../actions/documentsActions";
 import { clearFormData } from "../actions/formDataActions";
 import { clearGlobalData } from "../actions/globalDataActions";
@@ -23,7 +23,7 @@ export const useReduxHook = () => {
     localStorage.removeItem("userData");
     localStorage.removeItem("auth");
     localStorage.removeItem("ironLinc");
-    dispatch(clearDealSubmissionsState());
+    // dispatch(clearDealSubmissionsState());
     dispatch(clearCreditAuthState());
     dispatch(clearDocuments());
     dispatch(clearFormData());

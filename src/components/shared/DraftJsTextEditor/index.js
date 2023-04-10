@@ -18,8 +18,9 @@ const DraftJsTextEditor = ({
   readOnly,
   onSubmit,
   isLoading,
+  name,
   hideOptions,
-  buttonText,
+  onChange,
 }) => {
   const [pageIsLoaded, setPageIsLoaded] = useState(false);
   const [isModified, setIsModified] = useState(false);
@@ -34,6 +35,7 @@ const DraftJsTextEditor = ({
 
     if (newState) {
       setEditorState(newState);
+      // onChange(newState);
       return "handled";
     }
   };
@@ -48,46 +50,34 @@ const DraftJsTextEditor = ({
     if (pageIsLoaded) {
       setEditorState(newState);
 
-      let oldContent = editorState.getCurrentContent();
-      let newContent = newState.getCurrentContent();
-      if (oldContent !== newContent) {
-        setIsModified(true);
-      }
+      onChange(newState);
     } else {
       setPageIsLoaded(true);
     }
   };
 
-  const handleSubmitSave = async (editState) => {
-    if (onSubmit) {
-      const convertedEditorStateData = editState.getCurrentContent();
-
-      const editierStateJSON = JSON.stringify(
-        convertToRaw(convertedEditorStateData)
-      );
-
-      onSubmit(editierStateJSON);
-    }
-    setEditorState(EditorState.createEmpty());
-    setIsModified(false);
-  };
-
   useEffect(() => {
-    // console.log("DRAFT JS STATE: ", data);
-    const isJsonString = (str) => {
-      try {
-        JSON.parse(str);
-      } catch (e) {
-        return false;
-      }
-      return true;
-    };
-    if (isNil(data) || !isJsonString(data)) {
+    // if (readOnly) {
+    //   console.log("DRAFT JS STATE: ", data);
+    // }
+    // const isJsonString = (str) => {
+    //   try {
+    //     JSON.parse(str);
+    //   } catch (e) {
+    //     return false;
+    //   }
+    //   return true;
+    // };
+    // if (isNil(data) || !isJsonString(data)) {
+    //   return;
+    // }
+    // const contentState = convertFromRaw(JSON.parse(data));
+    // const parsedEditorState = EditorState.createWithContent(contentState);
+    console.log("data");
+    if (isNil(data)) {
       return;
     }
-    const contentState = convertFromRaw(JSON.parse(data));
-    const parsedEditorState = EditorState.createWithContent(contentState);
-    setEditorState(parsedEditorState);
+    setEditorState(data);
   }, [data]);
 
   const footStyles_default = {
@@ -95,7 +85,7 @@ const DraftJsTextEditor = ({
     display: "flex",
     justifyContent: hideOptions ? "flex-end" : "space-between",
     alignItems: "center",
-    flexGrow: 1,
+    flexGrow: 0,
   };
 
   const footerStyles = {
@@ -112,10 +102,20 @@ const DraftJsTextEditor = ({
 
   return (
     <Box
-      sx={{ height: "100%", width: "100%" }}
+      sx={{
+        border: readOnly ? "none" : "var(--border)",
+        borderRadius: "4px",
+        height: "100%",
+        width: "100%",
+        minHeight: readOnly ? "max-content" : "140px",
+        ".public-DraftEditor-content": {
+          padding: readOnly ? 0 : "10px",
+        },
+      }}
       className="draft-js-root-container"
     >
       <Editor
+        key={name}
         customStyleMap={DraftJsStyleMap}
         editorState={editorState}
         handleKeyCommand={handleKeyCommand}
@@ -124,28 +124,16 @@ const DraftJsTextEditor = ({
         plugins={[dividerPlugin]}
         readOnly={readOnly}
       />
-      <Box sx={footerStyles[readOnly ? "isReadOnly" : "isNotReadOnly"]}>
-        {readOnly || hideOptions ? null : (
-          <TextEditorToolbarActions
-            editorState={editorState}
-            handleInlineStyleClick={handleInlineStyleClick}
-          />
-        )}
-        {readOnly ? null : (
-          <LoadingButton
-            // sx={{ borderRadius: 0, width: "100%" }}
-            loading={isLoading}
-            sx={{ padding: "3px 8px" }}
-            disabled={isModified ? false : true}
-            // loadingPosition="start"
-            onClick={() => handleSubmitSave(editorState)}
-            // endIcon={<Save />}
-            variant="contained"
-          >
-            {buttonText ? buttonText : "Post"}
-          </LoadingButton>
-        )}
-      </Box>
+      {readOnly ? null : (
+        <Box sx={footerStyles[readOnly ? "isReadOnly" : "isNotReadOnly"]}>
+          {readOnly || hideOptions ? null : (
+            <TextEditorToolbarActions
+              editorState={editorState}
+              handleInlineStyleClick={handleInlineStyleClick}
+            />
+          )}
+        </Box>
+      )}
     </Box>
   );
 

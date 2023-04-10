@@ -1,26 +1,22 @@
+import { MonetizationOnOutlined } from "@mui/icons-material";
 import {
   Box,
   Button,
   Container,
   Divider,
-  IconButton,
   Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import ScreenBody from "../../../../components/layout/Screen/ScreenBody";
 import ScreenSubTitleSection from "../../../../components/layout/Screen/sections/ScreenSubTitleSection";
 import BorderCard from "../../../../components/shared/BorderCard";
+import DisplayTable from "../../../../components/shared/DisplayTable";
 import MuiGrid from "../../../../components/shared/MuiGrid";
 import GridItem from "../../../../components/shared/MuiGrid/GridItem";
-import SubmittedLoanApplicationWidget from "../BorrowerDashboardScreen/borrowerDashboardWidgets/SubmittedLoanApplicationWidget";
-import DisplayTable from "../../../../components/shared/DisplayTable";
-import { Link, useNavigate } from "react-router-dom";
-import {
-  ChevronRightRounded,
-  MonetizationOnOutlined,
-  MonetizationOnRounded,
-} from "@mui/icons-material";
+import DashboardScreen from "../../../../components/layout/DashboardScreen";
+import BorrowerDashboardHeader from "../../BorrowerDashboardHeader/BorrowerDashboardHeader";
 
 const FundraisingScreen = (props) => {
   const navigate = useNavigate();
@@ -105,66 +101,69 @@ const FundraisingScreen = (props) => {
     },
   ];
   return (
-    <Stack sx={{ flexGrow: 1 }}>
-      <Box
-        p={"10px 0"}
-        sx={{
-          background: "#ffffff",
-        }}
-        direction={"row"}
-        justifyContent={"space-between"}
-      >
-        <Container maxWidth={false}>
-          <Stack
-            sx={{
-              background: "#ffffff",
-            }}
-            direction={"row"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-          >
-            <Stack alignItems={"center"} spacing={1}>
-              <Box gap="5px" display={"flex"} alignItems={"center"}>
-                <Typography variant="h3" fontSize={"1rem"}>
-                  Total Raised:
-                </Typography>
-                <Typography variant="h3" fontSize={"1rem"} fontWeight={700}>
-                  $34,400
-                </Typography>
-              </Box>
-              {/* <Typography
+    <DashboardScreen>
+      <BorrowerDashboardHeader />
+      <Stack sx={{ flexGrow: 1 }}>
+        <Box
+          p={"10px 0"}
+          sx={{
+            background: "#ffffff",
+          }}
+          direction={"row"}
+          justifyContent={"space-between"}
+        >
+          <Container maxWidth={false}>
+            <Stack
+              sx={{
+                background: "#ffffff",
+              }}
+              direction={"row"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+            >
+              <Stack alignItems={"center"} spacing={1}>
+                <Box gap="5px" display={"flex"} alignItems={"center"}>
+                  <Typography variant="h3" fontSize={"1rem"}>
+                    Total Raised:
+                  </Typography>
+                  <Typography variant="h3" fontSize={"1rem"} fontWeight={700}>
+                    $34,400
+                  </Typography>
+                </Box>
+                {/* <Typography
                 variant="body1"
                 fontSize={".8rem"}
                 sx={{ opacity: 0.7 }}
               >
                 Date Range:
               </Typography> */}
+              </Stack>
+              <Button
+                onClick={handleClick}
+                // color="primary"
+                variant="outlined"
+                endIcon={<MonetizationOnOutlined />}
+                // sx={{ background: "#39679112", marginLeft: "10px" }}
+              >
+                Create Fundraisor
+              </Button>
             </Stack>
-            <Button
-              onClick={handleClick}
-              // color="primary"
-              variant="outlined"
-              endIcon={<MonetizationOnOutlined />}
-              // sx={{ background: "#39679112", marginLeft: "10px" }}
-            >
-              Create Fundraisor
-            </Button>
-          </Stack>
-        </Container>
-      </Box>
-      <Divider flexItem />
-      <ScreenSubTitleSection>My Recent Fundraisors</ScreenSubTitleSection>
+          </Container>
+        </Box>
+        <Divider flexItem />
+        <ScreenSubTitleSection>My Recent Fundraisors</ScreenSubTitleSection>
 
-      <ScreenBody>
-        <MuiGrid spacing={4}>
-          <GridItem size={12}>
-            <BorderCard type="bar">
-              <DisplayTable noBorder columns={cols} data={DUMMY} />
-            </BorderCard>
-          </GridItem>
-        </MuiGrid>
-      </ScreenBody>
-    </Stack>
+        <ScreenBody>
+          <MuiGrid spacing={4}>
+            <GridItem size={12}>
+              <BorderCard type="bar">
+                <DisplayTable noBorder columns={cols} data={DUMMY} />
+              </BorderCard>
+            </GridItem>
+          </MuiGrid>
+        </ScreenBody>
+      </Stack>
+    </DashboardScreen>
   );
 };
 

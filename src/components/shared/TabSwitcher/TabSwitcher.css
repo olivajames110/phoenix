@@ -71,7 +71,7 @@
 }
 
 .tab-switcher .MuiTabs-indicator {
-  background-color: #235685b0 !important;
+  background-color: #cc4100 !important;
   height: 3px;
   border-radius: 40px;
 }
@@ -81,7 +81,7 @@
 }
 
 .tab-switcher .MuiTab-root.Mui-selected {
-  color: var(--blueButton) !important;
+  color: #cc4100 !important;
   font-weight: 600;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f8ff), to(#ffffff00));
   background-image: linear-gradient(to top, #f0f8ff, #ffffff00);

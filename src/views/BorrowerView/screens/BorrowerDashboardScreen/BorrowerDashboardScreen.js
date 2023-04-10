@@ -25,6 +25,8 @@ import {
   CreditAuthStatus,
   MoneyBorrowed,
 } from "./borrowerDashboardWidgets/secondaryWidgets";
+import DashboardScreen from "../../../../components/layout/DashboardScreen";
+import BorrowerDashboardHeader from "../../BorrowerDashboardHeader/BorrowerDashboardHeader";
 
 const BorrowerDashboardScreen = (props) => {
   const [creditAuthModalIsActive, setCreditAuthModalIsActive] = useState(false);
@@ -96,40 +98,50 @@ const DashboardBody = ({ handleLoanAppClick, handleCreditAuthClick }) => {
   );
 
   return (
-    <Stack sx={{ flexGrow: 1 }}>
-      <ScreenSubTitleSection>Welcome back, Jimmy Oliva</ScreenSubTitleSection>
+    <DashboardScreen>
+      <BorrowerDashboardHeader />
+      <Stack sx={{ flexGrow: 1, width: "100%" }}>
+        <ScreenSubTitleSection>Welcome back, Jimmy Oliva</ScreenSubTitleSection>
 
-      <ScreenBody sx={{ overflowY: "auto", flexGrow: 1, height: "100%" }}>
-        <Stack
-          direction={"row"}
-          spacing={2}
-          // padding={"14px 0"}
-          sx={{ width: "100%", height: "100%" }}
-        >
-          <Stack flexGrow={1} spacing={2}>
-            <MuiGrid spacing={2}>
-              <GridItem size={4}>
-                <LoanScenariosWidget actionButtonOnClick={handleLoanAppClick} />
-              </GridItem>
-              <GridItem size={4}>
-                <LoanApplicationWidget
-                  actionButtonOnClick={handleLoanAppClick}
-                />
-              </GridItem>
-              <GridItem size={4}>
-                <CreditAuthorizationWidget
-                  actionButtonOnClick={handleCreditAuthClick}
-                />
-              </GridItem>
-            </MuiGrid>
-            <PrimaryWidget title="Adoption Applications">
-              <SubmittedLoanApplicationWidget />
-            </PrimaryWidget>
+        <ScreenBody sx={{ overflowY: "auto", flexGrow: 1, height: "100%" }}>
+          <Stack
+            direction={"row"}
+            spacing={2}
+            // padding={"14px 0"}
+            sx={{ width: "100%", height: "100%" }}
+          >
+            <Stack flexGrow={1} spacing={2}>
+              <MuiGrid spacing={2}>
+                <GridItem size={3}>
+                  <LoanScenariosWidget
+                    actionButtonOnClick={handleLoanAppClick}
+                  />
+                </GridItem>
+                <GridItem size={3}>
+                  <LoanScenariosWidget
+                    actionButtonOnClick={handleLoanAppClick}
+                  />
+                </GridItem>
+                <GridItem size={3}>
+                  <LoanScenariosWidget
+                    actionButtonOnClick={handleLoanAppClick}
+                  />
+                </GridItem>
+                <GridItem size={3}>
+                  <LoanApplicationWidget
+                    actionButtonOnClick={handleLoanAppClick}
+                  />
+                </GridItem>
+              </MuiGrid>
+              <PrimaryWidget title="Adoption Applications">
+                <SubmittedLoanApplicationWidget />
+              </PrimaryWidget>
+            </Stack>
+            <MessagesWidget />
           </Stack>
-          <MessagesWidget />
-        </Stack>
-      </ScreenBody>
-    </Stack>
+        </ScreenBody>
+      </Stack>
+    </DashboardScreen>
   );
 };
 

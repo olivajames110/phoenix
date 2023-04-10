@@ -13,13 +13,14 @@ const DashboardMain = (props) => {
       <VerticalNavRightColumn>
         <BorrowerDashboardHeader />
         <Routes>
-          <Route path={"/*"} element={<BorrowerDashboardScreen />} />
-          <Route path={"/fundraising/*"}>
+          <Route path={"/"} element={<BorrowerDashboardScreen />} />
+          <Route path={"/dashboard"} element={<BorrowerDashboardScreen />} />
+          <Route path={"/fundraising/"}>
             <Route index element={<FundraisingScreen />} />
-            <Route path={":id/*"} element={<BorrowerLoanDrilldown />} />
+            {/* <Route path={":id/"} element={<BorrowerLoanDrilldown />} /> */}
             <Route path={"create"} element={<FundraisingCreateScreen />} />
           </Route>
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          {/* <Route path="*" element={<Navigate to="/dashboard" replace />} /> */}
         </Routes>
       </VerticalNavRightColumn>
     </>

@@ -50,19 +50,13 @@ const CtaWidget = (props) => {
   const primaryNumber = (
     <Stack
       // flexBasis={"40%"}
-      alignItems={"flex-start"}
+      alignItems={"center"}
       justifyContent={"center"}
-      sx={{ padding: "0 0 0", paddingLeft: "12px" }}
+      // sx={{ padding: "0 0 0", paddingLeft: "12px" }}
       // flexShrink={0}
-      flexGrow={1}
+      flexBasis={"64%"}
+      // flexGrow={0}
     >
-      <Typography
-        // padding="5px 10px 0"
-        sx={{ fontSize: ".9rem", fontWeight: "600", textAlign: "left" }}
-        variant="h3"
-      >
-        {props.title}
-      </Typography>
       <Typography
         sx={{ marginTop: "5px", fontWeight: "700", fontSize: "2rem" }}
         variant="h2"
@@ -90,6 +84,9 @@ const CtaWidget = (props) => {
         alignItems: "center",
         justifyContent: "center",
         // width: "50%",
+        flexBasis: "36%",
+        // flexShrink: 1,
+        // flexGrow: 1,
         height: "80px",
         borderRadius: "8px",
       }}
@@ -104,7 +101,7 @@ const CtaWidget = (props) => {
       sx={{ padding: "14px 0 8px", background: "#cc410017", width: "100%" }}
     >
       <WidgetTitle sx={{ color: "var(--black)", fontSize: ".8rem" }}>
-        {props.description}
+        {props.title}
         <ChevronRightRounded />
       </WidgetTitle>
     </Stack>
@@ -112,7 +109,25 @@ const CtaWidget = (props) => {
 
   const content = (
     <Stack padding="5px  0 10px" width="100%">
+      {/* <Typography
+        // padding="5px 10px 0"
+        sx={{ fontSize: ".9rem", fontWeight: "600", textAlign: "left" }}
+        variant="h3"
+      >
+        {props.title}
+      </Typography> */}
       <Stack
+        padding="10px"
+        direction={"row"}
+        alignItems={"center"}
+        spacing={4}
+        justifyContent={"space-evenly"}
+        width="100%"
+      >
+        {primaryNumber}
+        {graph}
+      </Stack>
+      {/* <Stack
         padding="10px"
         direction={"row"}
         alignItems={"center"}
@@ -124,7 +139,7 @@ const CtaWidget = (props) => {
           <GridItem size={5}>{primaryNumber}</GridItem>
           <GridItem size={7}>{graph}</GridItem>
         </MuiGrid>
-      </Stack>
+      </Stack> */}
 
       {bottomBar}
     </Stack>

@@ -10,11 +10,11 @@ import { v4 as uuidv4 } from "uuid";
 // ];
 const formInitStat = [];
 
-const dealSubmissionsReducer = (state = formInitStat, action) => {
+const fundraisorsReducer = (state = formInitStat, action) => {
   switch (action.type) {
-    case "SET_DEAL_SUBMISSIONS_STATE":
+    case "SET_FUNDRAISORS_STATE":
       return action.payload;
-    case "UPDATE_DEAL_SUBMISSIONS_STATE":
+    case "UPDATE_FUNDRAISORS_STATE":
       let spreadState = [...state];
       console.log("old state -->", spreadState);
       let filteredState = spreadState.filter((i) => i.id !== action.payload.id);
@@ -22,10 +22,10 @@ const dealSubmissionsReducer = (state = formInitStat, action) => {
       let updatedState = [...filteredState, { ...action.payload }];
       console.log("updatedState -->", updatedState);
       return updatedState;
-    case "ADD_DEAL_SUBMISSION":
+    case "ADD_FUNDRAISORS":
       return [...state, action.payload];
 
-    case "CLEAR_DEAL_SUBMISSIONS_STATE":
+    case "CLEAR_FUNDRAISORS_STATE":
       return formInitStat;
 
     default:
@@ -33,4 +33,4 @@ const dealSubmissionsReducer = (state = formInitStat, action) => {
   }
 };
 
-export default dealSubmissionsReducer;
+export default fundraisorsReducer;

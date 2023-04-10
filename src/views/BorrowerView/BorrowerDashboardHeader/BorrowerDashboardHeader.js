@@ -25,7 +25,7 @@ const BorrowerDashboardHeader = ({ title }) => {
               justifyContent: "space-between",
             }}
           >
-            <PortalScreenTitle>{pageTitle}</PortalScreenTitle>
+            <PortalScreenTitle>{title ? title : pageTitle}</PortalScreenTitle>
             <Box
               sx={{
                 display: "flex",

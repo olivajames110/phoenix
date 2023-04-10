@@ -13,7 +13,7 @@ const DrilldownCardTabHeader = (props) => {
         fontWeight: "700",
         letterSpacing: 0,
         fontFamily: "var(--mont)",
-        color: "var(--blueButton) !important",
+        color: "#CC4100 !important",
       }}
     >
       {props.children}

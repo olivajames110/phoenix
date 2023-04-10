@@ -72,14 +72,14 @@
     color: #000000c9;
   }
   .MuiTabs-indicator {
-    background-color: #235685b0 !important;
+    background-color: #cc4100 !important;
     height: 3px;
     border-radius: 40px;
   }
   .MuiTab-root {
     min-width: 0px;
     &.Mui-selected {
-      color: var(--blueButton) !important;
+      color: #cc4100 !important;
       font-weight: 600;
       background-image: linear-gradient(to top, #f0f8ff, #ffffff00);
       min-width: none;
